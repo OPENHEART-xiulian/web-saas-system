@@ -1,0 +1,126 @@
+@import './../constant.less';
+
+.input-list-table {
+  width: 100%;
+  // table-layout: fixed;
+  background: #fff;
+  border-collapse: collapse;
+
+  .ivu-input-icon+.ivu-input {
+    padding-right: 7px;
+  }
+
+  .row {
+    box-shadow: inset 0px -1px 0px 0px #f7f4f2;
+
+    &:last-child {
+      box-shadow: none;
+    }
+
+    .col {
+      padding-right: 10px;
+      position: relative;
+      min-width: 70px;
+      max-width: 110px;
+      box-sizing: border-box;
+
+      .ivu-tooltip,
+      .ivu-poptip {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &.span {
+        text-align: left;
+        .font(14px, @theme-black);
+      }
+
+      &.col-50 {
+        width: 50px;
+        min-width: 50px;
+        text-align: center;
+
+        i {
+          line-height: 36px;
+          cursor: pointer;
+          .font(18px, rgb(255, 82, 29));
+
+          &:hover {
+            color: fade(rgb(255, 82, 29), 90%);
+          }
+        }
+      }
+
+      &.col-140 {
+        width: 140px;
+      }
+
+      &.col-150 {
+        width: 150px;
+      }
+
+      &.col-300 {
+        width: 150px;
+      }
+
+      .tip {
+        z-index: 10;
+        .pos(absolute, 20px, 56px);
+        .font(12px, #fd3600);
+      }
+    }
+
+  }
+
+  .theader {
+    th {
+      height: 50px;
+      color: @theme-black;
+      font-weight: normal;
+    }
+
+    box-shadow: inset 0px -1px 0px 0px #f7f4f2;
+    text-align: left;
+  }
+
+  .tbody {
+
+    // box-shadow: inset 0px -1px 0px 0px #f7f4f2;
+    .row {
+      td {
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .tfooter {
+    text-align: right;
+    box-shadow: inset 0px 1px 0px 0px #f7f4f2;
+
+    tr {
+      td {
+        padding-top: 20px;
+      }
+    }
+
+    .icon-xinzeng {
+      vertical-align: middle;
+    }
+  }
+
+  .no-data {
+    text-align: center;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    color: #bbb;
+  }
+}

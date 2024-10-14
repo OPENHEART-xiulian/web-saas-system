@@ -1,0 +1,557 @@
+@import '../constant.less';
+
+.w-table {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+
+  .ivu-table-wrapper {
+    border: 0;
+  }
+
+  .ivu-table {
+    &::before,
+    &::after {
+      display: none;
+    }
+    .ivu-table-cell{
+      text-overflow: initial;
+    }
+  }
+
+  th {
+    background-color: #FCFBFA;
+    height: 50px; 
+    border-bottom: 1px solid #E5E2DF;
+    font-weight: normal;
+    .font();
+
+    .ivu-table-sort,
+    .ivu-table-filter {
+      margin-left: 0;
+      i {
+        color: #BFBDBA;
+      }
+
+      .on {
+        color: @primary-color;
+      }
+    }
+  }
+
+  td {
+    padding: 10px 0;
+    border-bottom: 1px solid #F7F4F2;
+    .font(14px, #807D7C);
+    height: 50px;
+  }
+
+  tr:nth-child(2n) td {
+    background-color: #FCFBFA !important;
+  }
+
+  .ivu-table-row.ivu-table-row-hover td{
+    background-color: #FFF9F2!important;
+  }
+
+  .table-bottom {
+    display: flex;
+  }
+  .operate-btn {
+    // position: absolute;
+    margin-top: 20px;
+    padding-left: 18px;
+    width: 200px;
+
+    .ivu-checkbox-wrapper {
+      margin-right: 28px;
+    }
+  }
+
+  td.plate-no {
+    display: table-cell;
+    .ivu-table-cell {
+      overflow: initial;
+    }
+
+    span {
+      display: inline-block;
+      padding: 4px 6px;
+      background: #336EE3;
+      box-shadow: 0 0 0 1px #fff, 0 0 0 2px #336EE3;
+      border-radius: 2px;
+      .font(14px, #fff);
+      &.none {
+        background: #E5E2DF;
+        box-shadow: 0 0 0 1px #fff, 0 0 0 2px #E5E2DF;
+        color: @theme-black;
+      }
+    }
+  }
+
+  th.plate-no {
+    display: table-cell;
+  }
+}
+
+// 表格筛选
+.ivu-table-filter-list {
+  .ivu-checkbox-wrapper {
+    line-height: 28px;
+    .font(14px, #333);
+  }
+
+  .ivu-table-filter-list-single {
+    max-height: 200px;
+    .ivu-table-filter-select-item {
+      padding: 8px 28px;
+      text-align: center;
+    }
+  }
+}
+
+// 需要自定义宽度的表格
+.table-width .ivu-table {
+  colgroup {
+    display: none;
+  }
+  tr {
+    .ivu-table-cell{
+      padding: 0;
+      padding-right: 18px;
+    }
+    >:first-child {
+      width: 80px;
+      .ivu-table-cell{
+        padding-left: 18px;
+      }
+    }
+    >:last-child {
+      width: 130px;
+    }
+  }
+}
+// 配件入库
+.deposit-table .ivu-table tr {
+  :nth-child(4),
+  :nth-child(5),
+  :nth-child(6),
+  :nth-child(7) {
+    width: 12%;
+  }
+  
+  :nth-child(7) {
+    width: 12%;
+  }
+}
+
+// 配件出库
+.output-table .ivu-table tr {
+  :nth-child(4),
+  :nth-child(5),
+  :nth-child(6) {
+    width: 14%;
+  }
+}
+// // 配件库存
+// .stock-table .ivu-table tr {
+//   :nth-child(2) {
+//     width: 9%;
+//   }
+  
+//   :nth-child(7) {
+//     width: 7%;
+//   }
+//   :nth-child(8),
+//   :nth-child(9),
+//   :nth-child(10) {
+//     width: 9%;
+//   }
+// }
+
+// 配件盘点
+.takestock-table .ivu-table tr {
+  >:nth-child(4),
+  >:nth-child(5),
+  >:nth-child(6),
+  >:nth-child(7){
+    width: 12%;
+  }
+
+  >:last-child {
+    max-width: 220px;
+    width: 200px;
+    >.ivu-table-cell>div {
+      white-space: nowrap;
+    }
+  }
+}
+
+// 添加入库
+.deposit-table-add .ivu-table tr {
+  >:first-child {
+    width: 60px;
+  }
+  >:nth-child(2) {
+    width: 80px;
+  }
+  >:last-child {
+    width: 80px;
+  }
+}
+
+// 添加配件盘点
+.takestock-table-add .ivu-table tr {
+  >:first-child {
+    width: 60px;
+  }
+  >:nth-child(2) {
+    width: 80px;
+  }
+  >:last-child {
+    width: 80px;
+  }
+}
+
+// 配件列表
+.maintain-table .ivu-table tr {
+  >:first-child {
+    width: 60px;
+  }
+
+  >:nth-child(2) {
+    width: 60px;
+  }
+
+  >:nth-child(3) {
+    width: 130px;
+  }
+
+  >:nth-child(4) {
+    width: 65px;
+  }
+
+  >:last-child {
+    width: 80px;
+
+    .ivu-table-cell {
+      padding-right: 0;
+    }
+  }
+}
+
+// 挂账报表
+.credit-table .ivu-table tr {
+  >:last-child {
+    width: 80px;
+  }
+}
+
+// 供应商详情列表
+.supplier-detail-table {
+  .ivu-table tr {
+    >:last-child {
+      width: auto;
+    }
+
+    >:nth-child(6) {
+      width: 15%;
+    }
+
+    >:nth-child(7) {
+      width: 18%;
+    }
+
+  }
+}
+
+// 客户详情车辆信息列表
+.customer-vehicle-table {
+  .ivu-table tr {
+    >:last-child {
+      width: 150px;
+    }
+
+    >:nth-child(2) {
+      width: 10%;
+    }
+
+    >:nth-child(3) {
+      width: 22%;
+    }
+  }
+}
+
+ // 会员卡模板
+.card-template-table {
+  .ivu-table tr {
+    >:last-child {
+      width: 150px;
+    }
+
+    >:nth-child(2) {
+      width: 10%;
+    }
+
+    >:nth-child(5) {
+      width: 12%;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .deposit-table .ivu-table tr {
+    :nth-child(4),
+    :nth-child(5),
+    :nth-child(6) {
+      width: 10%;
+    }
+    
+    :nth-child(7) {
+      width: 8%;
+    }
+  }
+
+  .output-table .ivu-table tr {
+    :nth-child(4),
+    :nth-child(5),
+    :nth-child(6) {
+      width: 12%;
+    }
+  }
+  
+  // // 配件库存
+  // .stock-table .ivu-table tr {
+  //   :nth-child(2),
+  //   :nth-child(7),
+  //   :nth-child(8),
+  //   :nth-child(9),
+  //   :nth-child(10) {
+  //     width: 7%;
+  //   }
+  // }
+
+  .takestock-table .ivu-table tr {
+    
+    >:nth-child(4) {
+      width: 10%;
+    }
+    >:nth-child(5) {
+      width: 13%;
+    }
+
+    >:nth-child(6) {
+      width: 14%;
+    }
+    >:nth-child(7){
+      width: 8%;
+    }
+  }
+  
+  // 添加入库
+  .deposit-table-add .ivu-table tr {
+    >:nth-child(2) {
+      width: 60px;
+    }
+    >:nth-child(3) {
+      width: 80px;
+    }
+    >:nth-child(8) {
+      width: 60px;
+    }
+    >:nth-child(9) {
+      width: 80px;
+    }
+    >:nth-child(10) {
+      width: 80px;
+    }
+  }
+  
+  // 添加配件盘点
+  .takestock-table-add .ivu-table tr {
+    >:nth-child(2) {
+      width: 50px;
+    }
+    
+    // >:nth-child(4),
+    // >:nth-child(5),
+    // >:nth-child(6) {
+    //   width: 80px;
+    // }
+    >:nth-child(3),
+    >:nth-child(8),
+    >:nth-child(9),
+    >:nth-child(10),
+    >:nth-child(11) {
+      width: 80px;
+    }
+  }
+  
+  // 配件列表
+  .maintain-table .ivu-table tr {
+    >:nth-child(2) {
+      width: 60px;
+    }
+    >:nth-child(3) {
+      width: 100px;
+    }
+    >:nth-child(8) {
+      width: 60px;
+    }
+    >:nth-child(9),
+    >:nth-child(10) {
+      width: 90px;
+    }
+  }
+
+  // 挂账报表
+  .credit-table .ivu-table tr {
+    .ivu-table-cell {
+      padding: 8px;
+    }
+
+    >:nth-child(1) {
+      width: 60px;
+    }
+
+    >:nth-child(2) {
+      width: 175px;
+    }
+
+    >:nth-child(3) {
+      width: 90px;
+    }
+
+    >:nth-child(8) {
+      width: 105px;
+    }
+
+    >:nth-child(9) {
+      width: 105px;
+    }
+
+    >:last-child {
+      width: 70px;
+    }
+  }
+
+  // 供应商详情列表
+  .supplier-detail-table .ivu-table tr {
+    .ivu-table-cell {
+      padding: 8px;
+    }
+
+    >:nth-child(1),
+    >:nth-child(2) {
+      width: 60px;
+    }
+  }
+
+  // 客户详情车辆信息列表
+  .customer-vehicle-table .ivu-table tr {
+    .ivu-table-cell {
+      padding: 8px;
+    }
+
+    >:nth-child(1) {
+      width: 60px;
+    }
+
+    >:nth-child(2) {
+      width: 120px;
+    }
+
+    >:nth-child(4),
+    >:nth-child(5) {
+      width: 75px;
+    }
+
+    >:nth-child(6),
+    >:nth-child(7) {
+      width: 100px;
+    }
+
+    >:last-child {
+      width: 130px;
+    }
+  }
+
+  // 车辆管理列表
+  .car-table {
+    colgroup {
+      display: none;
+    }
+
+    .ivu-table tr {
+      .ivu-table-cell {
+        padding: 8px;
+      }
+  
+      >:nth-child(1) {
+        width: 50px;
+      }
+
+      >:nth-child(2) {
+        width: 14%;
+      }
+
+      >:nth-child(3) {
+        width: 22%;
+      }
+
+      >:nth-child(4),
+      >:nth-child(5) {
+        width: 90px;
+      }
+
+      >:nth-child(6),
+      >:nth-child(7) {
+        width: 100px;
+      }
+  
+      >:last-child {
+        width: 50px;
+      }
+    }
+  } 
+
+  // 会员卡模板
+  .card-template-table .ivu-table tr {
+    .ivu-table-cell {
+      padding: 8px;
+    }
+
+    >:nth-child(1) {
+      width: 55px;
+    }
+
+    >:nth-child(2) {
+      width: 100px;
+    }
+
+    >:nth-child(3) {
+      width: 70px;
+    }
+
+    >:nth-child(4) {
+      width: 60px;
+    }
+
+    >:nth-child(5) {
+      width: 140px;
+    }
+
+    >:nth-child(6) {
+      width: 75px;
+    }
+
+    >:nth-child(9) {
+      width: 90px;
+    }
+
+    >:last-child {
+      width: 130px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+/* 导航 */
+.side-nav {
+  background-color: #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #faf7f5, 2px 0px 4px 0px rgba(51, 46, 41, 0.05);
+  width: 100%;
+}
+.side-nav .nav-item {
+  position: relative;
+  text-align: center;
+  z-index: 1000;
+  color: #332E29;
+  cursor: pointer;
+}
+.side-nav .nav-item .iconfont {
+  font-size: 20px;
+  color: inherit;
+}
+.side-nav .nav-item.active,
+.side-nav .nav-item:hover {
+  background: #FAF7F5;
+  color: #FF8000;
+}
+.side-nav .nav-item.active .item-title {
+  position: relative;
+}
+.side-nav .nav-item.active .item-title::before {
+  content: '';
+  background-color: #FF8000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+}
+.side-nav .nav-item:hover .icon-child {
+  display: block;
+}
+.side-nav .nav-item .item-title {
+  padding: 15px 0;
+}
+.side-nav .nav-item .child-list {
+  display: none;
+  width: max-content;
+  background-color: #ffffff;
+  box-shadow: 2px 0px 4px 0px rgba(51, 46, 41, 0.05), inset 1px 0px 0px 0px #f7f4f2;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.side-nav .nav-item .child-list .child-item {
+  color: #332E29;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 20px;
+  width: 100px;
+}
+.side-nav .nav-item .child-list .child-item:hover,
+.side-nav .nav-item .child-list .child-item.active {
+  color: #FF8000;
+}
+.side-nav .nav-item .child-list .icon-title {
+  color: #FF8000;
+  background: #FAF7F5;
+}
+.side-nav .menu-active {
+  position: static;
+}
+.side-nav .menu-active.active .child-list {
+  display: inline-block;
+  height: 100%;
+  padding-top: 60px;
+  top: 0;
+  z-index: 10;
+  width: 100px;
+}

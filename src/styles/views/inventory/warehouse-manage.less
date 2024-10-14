@@ -1,0 +1,176 @@
+@import './../../constant.less';
+
+.warehouse-wrap {
+  .warehouse-manage {
+    position: relative;
+    padding: 20px 20px 0;
+    background: #fff;
+    box-shadow: @box-shadow;
+    
+    li {
+      display: inline-block;
+      width: 25%;
+      line-height: 1;
+      margin-bottom: 20px;
+      vertical-align: middle;
+      .font();
+
+      i {
+        margin-right: 4px;
+        vertical-align: middle;
+        .font(20px, #BFBDBA);
+      }
+
+      span {
+        vertical-align: middle;
+      }
+
+      &:last-child {
+        .list-item {
+          background: #FCFBFA;
+          box-shadow: none;
+          color: @primary-color;
+
+          i {
+            color: @primary-color;
+          }
+        }
+      }
+
+      &:nth-child(4n) {
+        .list-item {
+          margin-right: 0;
+        }
+      }
+    }
+    
+
+    .list-item {
+      height: 80px;
+      margin-right: 20px;
+      padding: 15px;
+      border-radius: 2px;
+      cursor: pointer;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        box-shadow: 0 0 5px 0 rgba(255, 128, 0, 0.3);
+
+        .opt {
+          display: inline-block;
+        }
+
+        .opt i {
+          color: @primary-color;
+        }
+      }
+    }
+
+    .active {
+      box-shadow: 0 0 5px 0 rgba(255, 128, 0, 0.3);
+      border-color: @primary-color;
+      color: @primary-color;
+      .border(@primary-color);
+
+      .append-icon {
+        background: @primary-color;
+        color: #fff;
+      }
+
+      &:hover .opt i,
+      .opt i {
+        color: @primary-color;
+      }
+    }
+
+    .name {
+      display: inline-block;
+      width: 54%;
+      .ellipsis();
+    }
+
+    .append-icon {
+      display: inline-block;
+      .size(50px);
+      line-height: 50px;
+      background: #F7F4F2;
+      border-radius: 50%;
+      text-align: center;
+      .font(20px, @theme-black);
+    }
+
+    .opt {
+      display: none;
+      float: right;
+      padding: 17px 0;
+
+      i {
+        margin-right: 12px;
+        font-size: 16px;
+
+        &:last-child {
+          margin-right: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .warehouse {
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      p {
+        text-align: left;
+
+        &:last-child {
+          margin-top: 8px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .slotting {
+      padding-top: 20px;
+      border-top: 1px solid #E5E2DF;
+
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      p {
+        text-align: left;
+
+        &:last-child {
+          margin-top: 8px;
+          .font(12px, #BFBDBA);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .warehouse-wrap {
+    .warehouse-manage {
+      .list-item {
+        padding: 20px 8px;
+      }
+
+      .append-icon {
+        .size(40px);
+        line-height: 40px;
+      }
+
+      .opt {
+        padding: 13px 0;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

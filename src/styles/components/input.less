@@ -1,0 +1,78 @@
+@import './../constant.less';
+.m-input{
+  position: relative;
+  color: @theme-black;
+  .ivu-input-wrapper{
+    height: inherit;
+    .ivu-input{
+      height: inherit;
+      min-height: 40px;
+    }
+  }
+  .left-icon{
+    .ivu-input{
+      padding-left: 35px;
+    }
+  }
+  .right-icon{
+    .ivu-input{
+      padding-right: 35px;
+    }
+  }
+
+  .iconfont{
+    // position: absolute;
+    // color: inherit;
+    // z-index: 1;
+    // top: 50%;
+    // font-size: 18px;
+    // transform: translateY(-50%);
+    // &.left{
+    //   left: 10px;
+    // }
+    // &.right{
+    //   right: 10px;
+    // }
+  }
+}
+
+.w-select-input {
+  position: relative;
+  .select-list {
+    z-index: 999;
+    padding: 8px 0;
+    position: absolute;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .select-item {
+      transition: all 0.1s linear;
+      font-size: 14px;
+      padding: 0 20px;
+      line-height: 32px;
+      cursor: pointer;
+      &:hover{
+        background: #f3f3f3;
+      }
+      &.active{
+        background: fade(#FF8000, 90%);
+        color: white;
+      }
+      
+      .high {
+        color: #FF8000;
+      }
+    }
+  }
+}
+
+.ivu-input-group-append{
+  padding: 4px 13px;
+}

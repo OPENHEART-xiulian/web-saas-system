@@ -1,0 +1,137 @@
+@import '../../styles/constant.less';
+
+.saas-query {
+  padding   : 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+  &.intable {
+    box-shadow: none;
+    .ivu-form {
+      background: #fcfbfa;
+      padding: 20px;
+    }
+    .query-box__btn {
+      padding-top: 0;
+      border: none;
+
+     
+    }
+  }
+  .query-box {
+    // display              : grid;
+    // column-gap      : 20px;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    &.column-3 {
+      // grid-template-columns: 1fr 1fr 1fr;
+      .query-box__item {
+        width: 33.33%;
+        max-width: 33.33%;
+        padding-right: 20px;
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &__item {
+      flex-grow: 1;
+      width: 25%;
+      max-width: 25%;
+      padding-right: 20px;
+      &:nth-child(4n) {
+        padding-right: 0;
+      }
+
+      &.ivu-form-item {
+        margin-bottom: 10px;
+      }
+
+      .ivu-input {
+        padding-left: 10px;
+        height: 34px;
+        line-height: 34px;
+      }
+      .m-input .ivu-input-wrapper .ivu-input {
+        height: 34px;
+      }
+
+      .ivu-form-item-label {
+        line-height: initial;
+        padding    : 0;
+        font-size: 14px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        text-align: left;
+        color: #554e45;
+      }
+
+      .ivu-form-item-content {
+        margin-top: 6px;
+      }
+
+      .ivu-date-picker {
+        display: inline;
+      }
+
+      // .ivu-radio-wrapper {
+      //   margin-right: 20px;
+      //   color       : @theme-black;
+      // }
+
+      // .ivu-input-group-append {
+      //   width        : 60px;
+      //   background   : #E5E2DF;
+      //   border-radius: 3px;
+      //   border-color : #E5E2DF;
+      //   font-size    : 14px;
+      //   color        : @theme-black;
+      // }
+
+      // 多选日期
+      .multiple {
+        display: flex;
+
+        &__item {
+          width    : 50%;
+          min-width: calc(50% - 10px);
+          flex-grow: 1;
+        }
+      }
+    }
+    .horizontal-line {
+      width: 20px; 
+      text-align: center;
+    }
+    .ivu-input-group > .ivu-input:last-child, .ivu-input-group-append {
+      width: auto;
+      min-width: 40px;
+      height: 34px;
+      background: #f7f4f2;
+      border: 1px solid #e5e2df;
+      border-left: 0;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 14px;
+      color: @theme-black
+    }
+  }
+
+  .query-box__btn {
+    width        : 100%;
+    padding  : 20px 0;
+    padding-top:10px;
+    padding-right: 0;
+    border-bottom   : 1px solid #eee;
+    text-align   : right;
+
+    .ivu-btn-default {
+      margin-right: 8px;
+    }
+    .ivu-btn{
+      height: 34px;
+      min-width: 90px;
+    }
+  }
+}

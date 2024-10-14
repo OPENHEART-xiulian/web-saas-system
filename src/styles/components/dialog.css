@@ -1,0 +1,1481 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.w-dialog .ivu-modal-header {
+  padding: 15px 20px 12px;
+  background: #FCFBFA;
+  border-bottom-color: #F7F4F2;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.w-dialog .ivu-modal-header-inner {
+  font-weight: normal;
+  font-size: 16px;
+  color: #332E29;
+}
+.w-dialog .ivu-modal-close {
+  right: 20px;
+}
+.w-dialog .ivu-modal-close .ivu-icon-ios-close-empty {
+  color: #807D7C;
+}
+.w-dialog .ivu-modal-body {
+  padding: 20px;
+}
+.w-dialog .ivu-modal-content {
+  border-radius: 6px;
+}
+.w-dialog .ivu-modal-footer {
+  margin: 0 20px;
+  padding: 20px 0 40px;
+  border-top-color: #F7F4F2;
+}
+.w-dialog .ivu-modal-footer .ivu-btn {
+  padding: 0;
+  font-size: 14px;
+  width: 90px;
+  height: 36px;
+}
+.w-dialog .ivu-modal-footer .ivu-btn-text {
+  color: #332E29;
+  border: 1px solid #E5E0DA;
+}
+.w-dialog .ivu-modal-footer .ivu-btn-text:hover {
+  border-color: #FF8000;
+  color: #FF8000;
+}
+.w-dialog .ivu-modal-footer .ivu-btn-primary {
+  color: #fff;
+}
+.w-dialog .ivu-form .ivu-radio-wrapper,
+.w-dialog .ivu-form .ivu-checkbox-wrapper,
+.w-dialog .ivu-form .ivu-form-item-label,
+.w-dialog .ivu-form .ivu-input {
+  font-size: 14px;
+  color: #332E29;
+}
+.phone-dialog .ivu-modal-body {
+  padding: 40px 100px;
+}
+.phone-dialog .ivu-form .ivu-form-item {
+  margin-bottom: 20px;
+}
+.phone-dialog .ivu-form .ivu-form-item:last-child {
+  margin-bottom: 0;
+}
+.phone-dialog .ivu-form .ivu-form-item-label {
+  padding: 10px 30px 10px 0;
+}
+.phone-dialog .ivu-form .ivu-btn-text {
+  padding: 0 4px;
+  font-size: 14px;
+  color: #FF8000;
+}
+.phone-dialog .ivu-form .phone-input,
+.phone-dialog .ivu-form .phone-input .ivu-input {
+  width: 120px;
+  margin-right: 6px;
+}
+.phone-dialog .ivu-form .ivu-btn-default {
+  padding: 7px 20px 6px;
+  width: 120px;
+  height: 36px;
+}
+.phone-dialog .ivu-form .ivu-btn-primary {
+  width: 100%;
+  margin-top: 5px;
+}
+.phone-dialog .ivu-form .vaildate {
+  width: 130px;
+  height: 36px;
+  line-height: 36px;
+}
+.phone-dialog .ivu-modal-footer {
+  padding: 0;
+  border-top: 0;
+}
+.password-dialog .ivu-modal-body {
+  padding: 40px 100px;
+}
+.password-dialog .ivu-form .ivu-form-item {
+  margin-bottom: 20px;
+}
+.password-dialog .ivu-form .ivu-form-item:last-child {
+  margin-bottom: 0;
+}
+.password-dialog .ivu-form .ivu-form-item-label {
+  padding: 10px 30px 10px 0;
+}
+.password-dialog .ivu-form .ivu-btn-primary {
+  width: 100%;
+  margin-top: 5px;
+}
+.password-dialog .ivu-modal-footer {
+  padding: 0;
+  border-top: 0;
+}
+.remind-dialog .iconfont {
+  margin-right: 10px;
+  vertical-align: sub;
+  font-size: 28px;
+  color: #FF8000;
+}
+.remind-dialog .ivu-modal-body {
+  padding: 20px 20px;
+  font-size: 14px;
+}
+.remind-dialog .select-content {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+}
+.remind-dialog .select-content .label {
+  width: 100px;
+  display: inline-block;
+}
+.remind-dialog p {
+  line-height: 22px;
+  font-size: 16px;
+  color: #332E29;
+}
+.remind-dialog .content {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #807D7C;
+}
+.remind-dialog .html-content {
+  margin-top: 6px;
+  margin-left: 38px;
+  font-size: 14px;
+  color: #807D7C;
+}
+.remind-dialog .ivu-modal-footer {
+  padding: 0 0 20px;
+  border-top: 0;
+}
+.remind-dialog .ivu-modal-footer .ivu-btn {
+  width: 80px;
+}
+.remind-dialog .ivu-modal-footer .ivu-btn i {
+  margin-right: 0;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.appearance-dialog .ivu-modal-body {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.appearance-dialog .title {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #F7F4F2;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #332E29;
+}
+.appearance-dialog .no-qustion {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+.appearance-dialog .ivu-form-item {
+  margin-bottom: 10px;
+}
+.appearance-dialog .ivu-form-item .ivu-form-item-label {
+  color: #807D7C;
+}
+.appearance-dialog .pos .ivu-checkbox-wrapper {
+  line-height: 34px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-align: center;
+  width: 96px;
+  height: 36px;
+  border: 1px solid #E5E0DA;
+}
+.appearance-dialog .pos .ivu-checkbox-wrapper:last-child {
+  margin-right: 0;
+}
+.appearance-dialog .pos .ivu-checkbox-wrapper .ivu-checkbox {
+  display: none;
+}
+.appearance-dialog .pos .ivu-checkbox-wrapper-checked {
+  border-color: #FF8000;
+  color: #FF8000;
+}
+.appearance-dialog .box {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+}
+.appearance-dialog .box:last-child {
+  margin-right: 0;
+}
+.function-dialog .ivu-modal-body {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.function-dialog .ivu-form-item {
+  margin-bottom: 4px;
+}
+.function-dialog .ivu-form-item-label {
+  width: 100%;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #F7F4F2;
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+}
+.function-dialog .ivu-checkbox-wrapper {
+  width: 173px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+.function-dialog .ivu-checkbox-wrapper:nth-child(3n) {
+  margin-right: 0;
+}
+.function-dialog .ivu-checkbox-wrapper .ivu-checkbox {
+  margin-right: 4px;
+}
+.vehicle-dialog .ivu-modal .ivu-modal-header {
+  padding: 0;
+}
+.vehicle-dialog .ivu-modal .ivu-modal-content {
+  overflow: hidden;
+}
+.vehicle-dialog .ivu-modal .ivu-modal-content .ivu-modal-body {
+  max-height: 550px;
+  margin-right: -17px;
+  overflow: auto;
+}
+.vehicle-dialog .tab-content .header {
+  margin-bottom: 20px;
+}
+.vehicle-dialog .tab-content .header span {
+  font-size: 12px;
+  padding: 1px 6px;
+  margin-right: 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+.vehicle-dialog .tab-content .header span:last-child {
+  margin-right: 0;
+}
+.vehicle-dialog .tab-content .header span.active,
+.vehicle-dialog .tab-content .header span:hover {
+  background: #FF8000;
+  color: white;
+}
+.vehicle-dialog .tab-content .header span.disabled {
+  color: #aaa;
+  background: #fff;
+  cursor: no-drop;
+}
+.vehicle-dialog .tab-content .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vehicle-dialog .tab-content .content span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 155px;
+  line-height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 15px 10px;
+  border: 1px solid #f7f4f2;
+}
+.vehicle-dialog .tab-content .content span i.iconfont {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.vehicle-dialog .tab-content .content span img {
+  height: 35px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.vehicle-dialog .tab-content .content span:nth-child(4n) {
+  margin-right: 0;
+}
+.vehicle-dialog .tab-content .content span.active,
+.vehicle-dialog .tab-content .content span:hover {
+  border-color: #FF8000;
+  color: #FF8000;
+}
+.vehicle-dialog .subBrand .select-brand {
+  margin: 0 0 10px;
+  padding: 6px 0 6px 10px;
+  border-left: 5px solid #FF8000;
+  background: #FCFBFA;
+  font-size: 12px;
+  color: #807D7C;
+}
+.vehicle-dialog .ivu-modal-footer {
+  display: none;
+}
+.vehicle-dialog .no-data {
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+}
+.vehicle-dialog .no-data .ivu-spin {
+  display: inline-block;
+}
+.brand-dialog li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 0 3px;
+}
+.brand-dialog .select-father,
+.brand-dialog .select-child {
+  margin-bottom: 20px;
+}
+.brand-dialog .select-father .disabled,
+.brand-dialog .select-child .disabled {
+  color: #ccc;
+}
+.brand-dialog .select-father li.active {
+  color: #fff;
+  background-color: #FF8000;
+  border-radius: 4px;
+}
+.brand-dialog .select-father li.disabled {
+  color: #ddd;
+}
+.brand-dialog .check-item {
+  border-top: 1px solid #fafafa;
+  padding-top: 20px;
+}
+.brand-dialog .check-item li {
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+.brand-dialog .check-item li .remove-item {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #333;
+}
+.payment-dialog .ivu-modal-body {
+  padding: 30px 20px;
+}
+.payment-dialog .ivu-form-item {
+  margin-bottom: 0;
+}
+.payment-dialog .ivu-modal-footer {
+  padding-top: 0;
+  border-top: 0;
+}
+.role-dialog .ivu-modal-body {
+  padding: 30px 20px;
+}
+.role-dialog .ivu-form-item {
+  width: 300px;
+  margin: 0 auto;
+}
+.role-dialog .ivu-modal-footer {
+  padding: 0 0 30px;
+  border-top: 0;
+}
+/* 导入弹窗 */
+.upload-dialog .body-header {
+  text-align: right;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #332E29;
+}
+.upload-dialog .body-header span {
+  cursor: pointer;
+}
+.upload-dialog .body-header span:hover {
+  color: #FF8000;
+  text-decoration: underline;
+}
+.upload-dialog .body-header .iconfont {
+  color: #FF8000;
+}
+.upload-dialog .body-content {
+  padding: 20px 0 0;
+}
+.upload-dialog .body-content .ivu-upload {
+  height: 200px;
+  border-radius: 3px;
+  background-color: #f7f4f2;
+}
+.upload-dialog .body-content .ivu-upload .ivu-upload-drag {
+  position: relative;
+  border: 1px dashed #FF8000;
+}
+.upload-dialog .body-content .ivu-upload .ivu-upload-drag .slot {
+  padding: 0 0 20px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.upload-dialog .body-content .ivu-upload .ivu-upload-drag .slot .iconfont {
+  font-size: 60px;
+  color: #FF8000;
+}
+.upload-dialog .body-content .ivu-upload .ivu-upload-drag .slot p {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #807d7c;
+}
+.upload-dialog .body-content .ivu-upload:hover .ivu-upload-drag {
+  border-color: #ff8000;
+}
+.upload-dialog .ivu-modal-footer {
+  padding: 0 20px;
+  margin: 0;
+}
+.upload-dialog .upload-footer {
+  display: flex;
+  line-height: 56px;
+}
+.upload-dialog .upload-footer .progress-con {
+  flex-grow: 1;
+  padding: 0 28px;
+}
+.upload-dialog .upload-footer .progress-con .progress-bg {
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #E5E2DF;
+  width: 100%;
+  height: 8px;
+}
+.upload-dialog .upload-footer .progress-con .progress-bg .progress {
+  transition: all linear 0.1s;
+  border-radius: 5px;
+  background: #4DCB73;
+  width: 50%;
+  height: 100%;
+}
+.upload-dialog .upload-footer .file-msg,
+.upload-dialog .upload-footer .tip {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  color: #807d7c;
+}
+.upload-dialog .upload-footer .file-msg .iconfont,
+.upload-dialog .upload-footer .tip .iconfont {
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.upload-dialog .upload-footer .file-msg {
+  max-width: 110px;
+}
+.upload-dialog .upload-footer .tip {
+  max-width: 100px;
+}
+.upload-dialog .upload-footer .tip .iconfont {
+  color: #4DCB73;
+}
+.construction-dialog .ivu-modal-body {
+  padding: 10px 20px 0;
+}
+.construction-dialog .order-detail {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #F7F4F2;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #807D7C;
+}
+.construction-dialog .order-detail span {
+  margin-right: 11px;
+  padding-right: 15px;
+  border-right: 1px solid #807D7C;
+}
+.construction-dialog .order-detail span:last-child {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+.construction-dialog .mar-r {
+  margin-right: 18px;
+}
+.construction-dialog .ivu-form-item {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.construction-dialog .ivu-form-item .ivu-btn {
+  height: auto;
+  padding: 2px 7px;
+}
+.construction-dialog .ivu-form-item-label {
+  padding: 10px 4px 10px 0;
+}
+.construction-dialog .warranty {
+  margin-top: 4px;
+  padding: 20px;
+  background: #FCFBFA;
+  color: #332E29;
+  border: 1px solid #F7F4F2;
+}
+.construction-dialog .warranty .ivu-form-item {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.construction-dialog .warranty .ivu-form-item-content {
+  font-size: 14px;
+}
+.construction-dialog .warranty .ivu-input-wrapper {
+  display: inline-table;
+  width: 130px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.construction-dialog .warranty .text-mar {
+  margin-left: 46px;
+}
+.construction-dialog .warranty .warranty-mileage .ivu-form-item-error-tip {
+  margin-left: 46px;
+}
+.construction-dialog .ivu-input-group-append {
+  width: 60px;
+  border-radius: 3px;
+  border-color: #E5E2DF;
+  font-size: 14px;
+  color: #332E29;
+}
+.construction-dialog .ivu-input-wrapper {
+  width: 200px;
+}
+.construction-dialog .ivu-radio-wrapper {
+  width: 180px;
+  height: 50px;
+  position: relative;
+  line-height: 50px;
+  margin-right: 6px;
+  border: 1px solid #E5E2DF;
+  text-align: center;
+}
+.construction-dialog .ivu-radio-wrapper .ivu-radio {
+  display: none;
+}
+.construction-dialog .ivu-radio-wrapper:last-child {
+  margin-right: 0;
+}
+.construction-dialog .ivu-radio-wrapper-checked {
+  border-color: #FF8000;
+  color: #FF8000;
+}
+.construction-dialog .ivu-radio-wrapper-checked::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  border-right: 12px #ff8800 solid;
+  border-top: 12px #ff8800 solid;
+  border-left: 12px transparent solid;
+  border-bottom: 12px transparent solid;
+  z-index: 9;
+}
+.construction-dialog .check-icon {
+  position: absolute;
+  display: block;
+  right: -1px;
+  top: -5px;
+  font-size: 24px;
+  color: #fff;
+  z-index: 10;
+}
+.construction-dialog .ivu-modal-footer {
+  border-top: 0;
+}
+.service-cate-dialog .ivu-modal .ivu-modal-body {
+  max-height: 600px;
+  overflow: auto;
+}
+.service-cate-dialog .ivu-modal .ivu-modal-body .action {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.service-cate-dialog .ivu-modal .ivu-modal-body .action .ivu-btn {
+  margin-left: 8px;
+  padding: 0 20px;
+  vertical-align: text-bottom;
+}
+.service-cate-dialog .ivu-modal .ivu-modal-body .action .ivu-btn i {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.service-cate-dialog .ivu-modal .ivu-modal-body .store-category {
+  padding: 0;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+}
+.info-dialog .ivu-modal-body {
+  padding: 40px;
+}
+.info-dialog i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #FF8000;
+  vertical-align: middle;
+}
+.info-dialog p {
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #807D7C;
+}
+.info-dialog p:first-child {
+  margin-bottom: 15px;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 16px;
+  color: #332E29;
+}
+.discounts-dialog p {
+  padding: 8px 0;
+  border-bottom: 1px solid #F7F4F2;
+  font-size: 14px;
+  color: #332E29;
+}
+.discounts-dialog p span {
+  margin-left: 30px;
+}
+.discounts-dialog .price {
+  color: #F22D00;
+  margin-left: 44px;
+}
+.discounts-dialog .discounts-items {
+  margin-bottom: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #F7F4F2;
+}
+.discounts-dialog .discounts-items .ivu-form-item-content {
+  display: flex;
+}
+.discounts-dialog .discounts-items .ivu-input-number-input {
+  font-size: 14px;
+  color: #332E29;
+}
+.discounts-dialog .discounts-items .first-text {
+  margin-right: 32px;
+}
+.discounts-dialog .discounts-items span {
+  line-height: 36px;
+  font-size: 14px;
+  color: #332E29;
+}
+.discounts-dialog .discounts-items .append {
+  display: inline-block;
+  width: 60px;
+  line-height: 34px;
+  margin-right: 20px;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+  background: #F7F4F2;
+  border: 1px solid #E5E2DF;
+  border-left: 0;
+}
+.discounts-dialog .discounts-items .append:last-child {
+  margin-right: 0;
+}
+.discounts-dialog .discounts-items .ivu-input-number {
+  width: 70px;
+  margin-left: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.discounts-dialog .discounts-items .ivu-input-number .ivu-input-number-handler-wrap {
+  display: none;
+}
+.discounts-dialog .ivu-modal-footer {
+  border-top: none;
+  margin: 0;
+  padding: 0 20px 20px;
+}
+.error-dialog .ivu-modal-body {
+  padding: 30px 20px;
+}
+.error-dialog i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #FF8000;
+}
+.error-dialog p {
+  line-height: 22px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #807D7C;
+}
+.error-dialog p:first-child {
+  margin-bottom: 6px;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 16px;
+  color: #332E29;
+}
+.error-dialog p span {
+  display: inline-block;
+}
+.error-dialog p span:nth-child(1) {
+  width: 68px;
+}
+.error-dialog p span:nth-child(2) {
+  width: 178px;
+}
+.add-service-dialog .item-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.add-service-dialog .item-box:last-child {
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #F7F4F2;
+}
+.add-service-dialog .item-box .ivu-form-item {
+  flex: 1;
+  width: 50%;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.add-service-dialog .item-box .ivu-form-item:nth-child(2n) {
+  margin-right: 0;
+}
+.add-service-dialog .item-box .ivu-form-item .ivu-form-item-error-tip {
+  padding-top: 4px;
+}
+.add-service-dialog .item-box .ivu-form-item-label {
+  line-height: initial;
+  padding: 0;
+  font-size: 14px;
+  color: #332E29;
+}
+.add-service-dialog .item-box .ivu-form-item-content {
+  margin-top: 6px;
+}
+.add-service-dialog .item-box .ivu-input-group-append {
+  width: 60px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #332E29;
+  background-color: #F7F4F2;
+  border-color: #E5E2DF;
+}
+.add-service-dialog .item-box .service-type {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  font-size: 14px;
+  color: #332E29;
+}
+.add-service-dialog .item-box .service-type span {
+  vertical-align: top;
+}
+.add-service-dialog .item-box .service-type span:nth-child(2) {
+  color: #FF8000;
+  cursor: pointer;
+}
+.add-service-dialog .item-box .service-type i {
+  margin-right: 6px;
+  margin-left: 10px;
+}
+.add-service-dialog .add-check {
+  float: left;
+  line-height: 36px;
+  font-size: 14px;
+  color: #332E29;
+}
+.add-service-dialog .half {
+  width: 50%;
+}
+.add-service-dialog .half .ivu-form-item {
+  margin-right: 10px;
+}
+.add-maintain-dialog .ivu-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-maintain-dialog .ivu-form .ivu-select {
+  width: 290px;
+  margin-right: 18px;
+}
+.add-maintain-dialog .ivu-form .ivu-radio-wrapper {
+  margin-right: 26px;
+}
+.add-maintain-dialog .ivu-form .line {
+  border-top: 1px solid #F7F4F2;
+}
+.add-maintain-dialog .ivu-form .ivu-input-group-append {
+  width: 60px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #332E29;
+  background-color: #F7F4F2;
+  border-color: #E5E2DF;
+}
+.add-maintain-dialog .ivu-form .ivu-form-item {
+  padding-right: 20px;
+  width: 33.3%;
+}
+.add-maintain-dialog .ivu-form .ivu-form-item:nth-child(3n) {
+  padding-right: 0;
+}
+.add-maintain-dialog .ivu-form .ivu-form-item .ivu-select,
+.add-maintain-dialog .ivu-form .ivu-form-item .tag-input,
+.add-maintain-dialog .ivu-form .ivu-form-item .ivu-input-wrapper,
+.add-maintain-dialog .ivu-form .ivu-form-item .ivu-input-number {
+  width: 100%;
+}
+.add-maintain-dialog .ivu-form .wid-50 {
+  width: 50%;
+}
+.add-maintain-dialog .ivu-form .wid-66 {
+  width: 66.6%;
+  padding: 0;
+}
+.add-maintain-dialog .ivu-form .tip {
+  position: absolute;
+  right: 0;
+  top: -32px;
+}
+.add-maintain-dialog .ivu-form .tip span {
+  color: #FF8000;
+  cursor: pointer;
+}
+.add-maintain-dialog .add-check {
+  float: left;
+  line-height: 36px;
+  font-size: 14px;
+  color: #332E29;
+}
+.add-client-dialog .type-radio-group {
+  margin: 20px 20px -10px;
+}
+.add-client-dialog .ivu-modal-body {
+  padding: 0;
+}
+.add-client-dialog .upload-img-list {
+  width: 95px;
+  height: 95px;
+  background: #f6f6f6;
+  margin-right: 10px;
+  display: block;
+}
+.add-client-dialog .upload-img-list:last-child {
+  margin-right: 0;
+}
+.add-client-dialog .ivu-upload .ivu-upload-select {
+  width: 100%;
+}
+.add-client-dialog .upload-content {
+  text-align: center;
+  width: 100%;
+}
+.add-client-dialog .upload-img-item {
+  width: 95px!important;
+  height: 95px!important;
+  margin-right: 0!important;
+}
+.add-client-dialog .image-wrap .ivu-form-item-content {
+  display: flex;
+}
+.add-client-dialog .image-wrap .upload-content {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.add-client-dialog .image-wrap .upload-content p {
+  line-height: 26px;
+}
+.add-client-dialog .image-wrap .upload-content .iconfont {
+  font-size: 32px;
+}
+.add-supplier-dialog .item-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.add-supplier-dialog .item-box:last-child {
+  margin-bottom: 0;
+}
+.add-supplier-dialog .item-box .ivu-form-item {
+  flex: 1;
+  width: 50%;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.add-supplier-dialog .item-box .ivu-form-item:nth-child(2n) {
+  margin-right: 0;
+}
+.add-supplier-dialog .item-box .ivu-form-item .ivu-form-item-error-tip {
+  padding-top: 4px;
+}
+.add-supplier-dialog .item-box .ivu-form-item-label {
+  line-height: initial;
+  padding: 0;
+  font-size: 14px;
+  color: #332E29;
+}
+.add-supplier-dialog .item-box .ivu-form-item-content {
+  margin-top: 6px;
+}
+.choose-dialog .ivu-modal {
+  min-width: 1260px;
+}
+.choose-dialog .search {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.choose-dialog .search .ivu-select {
+  width: 200px;
+  margin-right: 20px;
+}
+.choose-dialog .search .search-input {
+  position: relative;
+}
+.choose-dialog .search .iconfont {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #807D7C;
+}
+.choose-dialog .choose-content {
+  display: flex;
+}
+.choose-dialog .choose-content .choose-header {
+  position: relative;
+  padding: 0 15px;
+  background: #F7F4F2;
+  font-weight: bold;
+  box-shadow: none;
+  cursor: auto;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #332E29;
+}
+.choose-dialog .choose-content .choose-header .ivu-input-wrapper {
+  float: right;
+  margin-top: 7px;
+}
+.choose-dialog .choose-content .choose-header .ivu-input {
+  padding-right: 40px;
+}
+.choose-dialog .choose-content .choose-header .iconfont {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #807D7C;
+}
+.choose-dialog .choose-footer {
+  text-align: right;
+  padding: 10px 20px;
+}
+.choose-dialog .choose-footer a {
+  color: #ff8000;
+  cursor: pointer;
+}
+.choose-dialog .choose-footer a i {
+  margin-right: 5px;
+}
+.choose-dialog .library {
+  position: relative;
+}
+.choose-dialog .library .ivu-table-row {
+  cursor: pointer;
+}
+.choose-dialog .w-table {
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+}
+.choose-dialog .w-table td {
+  padding: 4px 0;
+}
+.choose-dialog .w-table .ivu-checkbox-inner {
+  width: 16px;
+  height: 16px;
+  transition: initial;
+}
+.choose-dialog .w-table .ivu-checkbox-checked .ivu-checkbox-inner::after {
+  width: 6px;
+  height: 10px;
+  transition: initial;
+}
+.choose-dialog .choose-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #F7F4F2;
+}
+.choose-dialog .choose-bottom .pagination {
+  display: inline-block;
+  width: auto;
+  padding: 10px 0 10px 25px;
+}
+.choose-dialog .choose-bottom .ivu-btn-text {
+  float: right;
+  line-height: 48px;
+  margin-right: 15px;
+}
+.choose-dialog .choose-bottom .ivu-btn-text i {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.choose-dialog .parent-class {
+  display: inline-block;
+  width: 12%;
+  border: 3px solid #E5E2DF;
+}
+.choose-dialog .choose-table {
+  position: relative;
+  display: inline-block;
+  width: 61%;
+  border: 3px solid #E5E2DF;
+  border-left: 0;
+}
+.choose-dialog .choose-table .w-table {
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+}
+.choose-dialog .choose-table .w-table td {
+  padding: 4px 0;
+}
+.choose-dialog .choose-table .w-table .selection {
+  text-align: center;
+}
+.choose-dialog .choose-table .w-table .selection .ivu-table-cell {
+  padding: 0 0 0 8px;
+}
+.choose-dialog .choose-table .w-table .name .ivu-table-cell {
+  padding: 0 8px 0 0;
+}
+.choose-dialog .choose-table .w-table .ivu-table-cell {
+  padding: 0 0 0 6px;
+}
+.choose-dialog .maintain-table colgroup col:nth-child(5),
+.choose-dialog .maintain-table colgroup col:nth-child(6),
+.choose-dialog .maintain-table colgroup col:nth-child(7) {
+  width: 9% !important;
+}
+.choose-dialog .maintain-table .main-name .ivu-table-cell {
+  padding: 0 6px;
+}
+.choose-dialog .confirm-table {
+  position: relative;
+  display: inline-block;
+  width: 26%;
+  margin-left: 20px;
+  border: 3px solid #E5E2DF;
+}
+.choose-dialog .confirm-table .w-table {
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+}
+.choose-dialog .confirm-table .w-table td {
+  padding: 4px 0;
+}
+.choose-dialog .confirm-table .w-table .first-row .ivu-table-cell {
+  padding: 0 8px 0 18px;
+}
+.choose-dialog .confirm-table .w-table .ivu-table-cell {
+  padding: 0 0 0 6px;
+}
+.choose-dialog .service-confirm colgroup col:nth-child(2) {
+  width: 20% !important;
+}
+.choose-dialog .maintain-confirm colgroup col:nth-child(2) {
+  width: 38% !important;
+}
+.choose-dialog .maintain-confirm colgroup col:nth-child(3) {
+  width: 16% !important;
+}
+.choose-dialog .maintain-confirm .name-row .ivu-table-cell {
+  padding: 0 8px;
+}
+.choose-card-dialog .parent-class {
+  width: 14%;
+}
+.choose-card-dialog .choose-table {
+  width: 86%;
+}
+.choose-card-dialog .cate-li {
+  line-height: 40px;
+  padding: 0 15px;
+  border-bottom: 1px solid #e5e2df;
+  cursor: pointer;
+  font-size: 14px;
+  color: #332E29;
+}
+.choose-card-dialog .active-li {
+  color: #FF8000;
+  background: #ffe8d1;
+}
+.backup-dialog .ivu-modal-body {
+  padding: 40px 20px;
+  font-size: 14px;
+}
+.backup-dialog .iconfont {
+  margin-right: 10px;
+  vertical-align: sub;
+  font-size: 28px;
+  color: #FF8000;
+}
+.backup-dialog p {
+  line-height: 22px;
+  font-size: 16px;
+  color: #332E29;
+}
+.backup-dialog .content {
+  margin-top: 6px;
+  margin-left: 38px;
+  font-size: 14px;
+  color: #807D7C;
+}
+.backup-dialog .form {
+  margin-top: 20px;
+  margin-left: 38px;
+}
+.wachat-dialog .qrcode {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.wachat-dialog .qrcode img {
+  padding: 10px 0;
+}
+.wachat-dialog .ivu-modal-footer {
+  text-align: center;
+  font-size: 12px;
+  color: #807D7C;
+}
+.wachat-dialog .ivu-modal-footer span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  line-height: 20px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #BFBDBA;
+  color: #fff;
+}
+.wachat-dialog .ivu-modal-footer i {
+  font-size: 32px;
+  color: #807D7C;
+}
+.course-dialog .ivu-modal-body {
+  padding: 20px 20px 0;
+}
+.course-dialog .ivu-modal-content {
+  border-radius: 3px;
+}
+.course-dialog .lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+.course-dialog .lists li {
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0;
+}
+.course-dialog .lists li:nth-child(4n) {
+  margin-right: 0;
+}
+.course-dialog .lists img {
+  width: 140px;
+  height: 100px;
+}
+.course-dialog .lists p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #332E29;
+}
+.course-dialog .ivu-modal-footer {
+  text-align: center;
+  border-top: 0;
+}
+.course-dialog .ivu-modal-footer .ivu-btn-text {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  color: #807D7C;
+  border: 0;
+}
+.carousel-dialog {
+  width: 840px;
+  height: 516px;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+.carousel-dialog .carousel-content {
+  width: 100%;
+  height: 420px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.carousel-dialog .carousel-content .carousel-item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.carousel-dialog .carousel-content img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-dialog.narrow-carousel {
+  width: 140px;
+  height: 100px;
+  padding: 10px;
+}
+.carousel-dialog.narrow-carousel .carousel-content {
+  width: 100%;
+  height: 80px;
+}
+.carousel-dialog.narrow-carousel .carousel-left {
+  margin-left: -100px;
+}
+.carousel-dialog.narrow-carousel .end-carousel {
+  top: 10px;
+  width: 120px;
+  height: 80px;
+  padding: 15px 0;
+}
+.carousel-dialog.narrow-carousel .end-carousel .iconfont {
+  font-size: 20px;
+  color: #4DCB72;
+}
+.carousel-dialog.narrow-carousel .end-carousel p {
+  margin: 0;
+  font-size: 12px;
+  color: #332E29;
+}
+.carousel-dialog.narrow-carousel .end-carousel .ivu-btn {
+  display: none;
+}
+.carousel-dialog .end-carousel {
+  position: absolute;
+  top: 20px;
+  width: 800px;
+  height: 420px;
+  padding: 80px 0;
+  text-align: center;
+  background: rgba(247, 244, 242, 0.9);
+}
+.carousel-dialog .end-carousel .iconfont {
+  font-size: 100px;
+  color: #4DCB72;
+}
+.carousel-dialog .end-carousel p {
+  margin-top: -15px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #332E29;
+}
+.carousel-dialog .end-carousel .ivu-btn:last-child {
+  margin-left: 18px;
+}
+.carousel-dialog .dialog-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.carousel-dialog .dialog-footer .ivu-btn {
+  margin-right: 10px;
+}
+.carousel-dialog .dialog-footer .ivu-btn:last-child {
+  margin-right: 0;
+}
+.carousel-dialog .dialog-footer .num {
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+}
+.carousel-dialog .dialog-footer .num span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 16px;
+  margin: 0 2px;
+  color: #1a1a1a;
+  background: #ccc;
+  border-radius: 50%;
+}
+.factory-dialog .dialog-content .form {
+  margin-top: 15px;
+}
+.factory-dialog .dialog-content label {
+  margin-right: 8px;
+}
+.factory-dialog .dialog-content .ivu-btn {
+  height: auto;
+  padding: 2px 7px;
+}
+.card-dialog .ivu-input-group,
+.card-dialog .ivu-select {
+  width: 200px;
+}
+.card-dialog .ivu-input-group-append {
+  width: 60px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #332E29;
+  background-color: #F7F4F2;
+  border-color: #E5E2DF;
+}
+.card-dialog .init-span {
+  font-size: 14px;
+  vertical-align: middle;
+}
+.card-dialog .ivu-table::before,
+.card-dialog .ivu-table::after {
+  display: none;
+}
+.card-dialog table {
+  width: 400px;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #F7F4F2;
+  border-bottom: 0;
+}
+.card-dialog table th,
+.card-dialog table td {
+  padding: 6px 10px;
+  border: 1px solid #F7F4F2;
+}
+.card-dialog table th:first-child,
+.card-dialog table td:first-child {
+  width: 70%;
+}
+.card-dialog table th {
+  background: #FCFBFA;
+  color: #332E29;
+}
+.card-dialog table td {
+  color: #807D7C;
+}
+@media screen and (max-width: 1400px) {
+  .choose-dialog .service-table colgroup col:nth-child(4),
+  .choose-dialog .service-table colgroup col:nth-child(5),
+  .choose-dialog .service-table colgroup col:nth-child(6),
+  .choose-dialog .service-table colgroup col:nth-child(7) {
+    width: 72px !important;
+  }
+  .choose-dialog .service-confirm colgroup col:nth-child(2) {
+    width: 25% !important;
+  }
+}
+.user-dialog .ivu-modal-body {
+  padding: 20px 20px 0;
+}
+.user-dialog .ivu-form {
+  padding: 20px 60px 0;
+}
+.user-dialog .area-container {
+  display: flex;
+}
+.user-dialog .area-container > :nth-child(2) {
+  margin-left: 20px;
+}
+.user-dialog .tip .iconfont {
+  margin-right: 10px;
+  color: #FF8000;
+}
+.alipay-dialog .ivu-modal-body {
+  padding: 30px 20px 20px;
+}
+.alipay-dialog .ivu-modal-body p {
+  position: relative;
+  padding: 0 40px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.alipay-dialog .ivu-modal-body p .iconfont {
+  position: absolute;
+  left: 0px;
+  font-size: 30px;
+  color: #FF8000;
+}
+.alipay-dialog .ivu-modal-body p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.alipay-dialog .ivu-modal-footer {
+  padding: 20px 0;
+}
+.alipay-dialog .ivu-btn.ivu-btn-ghost {
+  width: 100px;
+}
+.versions-dialog .ivu-modal-body {
+  padding: 20px;
+}
+.versions-dialog .ivu-modal-footer {
+  padding: 20px 20px;
+  margin: 0;
+}
+.versions-dialog .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #332E29;
+  margin-bottom: 10px;
+}
+.claim-dialog .ivu-modal-body {
+  padding: 20px 40px;
+}
+.claim-dialog .ivu-modal-footer {
+  display: none;
+}
+.claim-dialog .claim-dialog-tip {
+  font-size: 14px;
+  color: #332e29;
+  margin: 20px 0;
+}
+.claim-dialog .claim-dialog-tip span {
+  color: #ff8000;
+}
+.claim-dialog .confirm-btn {
+  margin-right: 10px;
+}

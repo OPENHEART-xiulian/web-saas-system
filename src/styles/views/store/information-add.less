@@ -1,0 +1,40 @@
+@import './../../constant.less';
+
+.store-info-add{
+  .title{
+    padding: 0 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgba(252, 251, 250, 1);
+    text-align: left;
+    .font();
+    .height(50px);
+  }
+  .ivu-form>.content{
+    margin-bottom: 20px;
+    padding: 20px 20px 0;
+    background: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: @box-shadow;
+    .form-row{
+      display: flex;
+      &.grow .ivu-form-item{
+        flex-grow: 1;
+      }
+      .ivu-form-item{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 25%;
+        &:last-child{
+          margin-right: 0;
+        }
+        .city-select{
+          .ivu-select-selection{
+            .height(36px);
+          }
+        }
+      }
+    }
+  }
+}

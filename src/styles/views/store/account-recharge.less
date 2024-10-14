@@ -1,0 +1,134 @@
+@import './../../constant.less';
+
+.account-recharge {
+  .content {
+    padding: 20px 20px 160px;
+    background: #fff;
+    box-shadow: @box-shadow;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F7F4F2;
+    font-weight: bold;
+    .height(50px);
+    .font();
+  }
+  
+  .money-list {
+    display: flex;
+    flex-grow: wrap;
+    margin-bottom: 40px;
+    font-weight: bold;
+    .font(24px, @theme-black);
+
+    .unit {
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    li {
+      width: 175px;
+      margin-right: 20px;
+      padding: 11px 20px;
+      cursor: pointer;
+      border-radius: 3px;
+      text-align: center;
+      .border(#E5E2DF);
+
+      &:hover {
+        border-color: @primary-color;
+        color: @primary-color;
+      }
+    }
+
+    .ivu-input-wrapper {
+      .size(350px, 60px);
+
+      .ivu-input {
+        height: 100%;
+        border-color: #E5E2DF;
+      }
+    }
+
+    .ivu-input-group-append {
+      padding: 4px 24px;
+      border-color: #E5E2DF;
+    }
+    
+    .active {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+
+    .input-active .ivu-input-wrapper .ivu-input {
+      border-color: @primary-color;
+    }
+  }
+
+  .pay-type {
+    display: inline-block;
+    width: 175px;
+    line-height: 1;
+    margin-left: 0;
+    margin-right: 15px;
+    padding: 11px 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius: 3px;
+    .font();
+    .border(#E5E2DF);
+
+    i {
+      margin-right: 12px;
+      font-size: 36px;
+      font-weight: normal;
+      vertical-align: middle;
+    }
+  }
+  
+  .ivu-radio-group {
+    width: 100%;
+  }
+
+  .ivu-radio {
+    display: none;
+  }
+
+  .ivu-radio-wrapper {
+    margin: 0;
+  }
+
+  .ivu-radio-wrapper-checked {
+    .pay-type {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+  }
+
+  .bottom {
+    float: right;
+    margin-top: 20px;
+    text-align: right;
+
+    .bottom-text {
+      width: 320px;
+      line-height: 16px;
+      margin-bottom: 10px;
+      padding: 15px 20px;
+      vertical-align: middle;
+      border: 5px solid #FFF2F0;
+      box-shadow: 0 0 0 1px #F22D00;
+      .font(12px, @theme-black);
+    }
+
+    .price {
+      font-weight: bold;
+      .font(20px, #F22D00);
+    }
+
+    .ivu-btn-error {
+      .size(150px, 44px);
+    }
+  }
+}

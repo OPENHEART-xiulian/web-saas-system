@@ -1,0 +1,153 @@
+@import './../constant.less';
+
+.w-form {
+  padding: 30px 20px;
+  background: #fff;
+
+  .ivu-form-item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .ivu-form-item-label {
+    padding-right: 40px;
+    .font();
+  }
+
+  .ivu-input-wrapper, 
+  .tag-input {
+    width: 600px;
+  }
+
+  .ivu-select {
+    width: 300px;
+  }
+
+  .ivu-checkbox-wrapper,
+  .ivu-radio-wrapper {
+    font-size: 14px;
+  }
+
+  .ivu-checkbox {
+    margin-right: 6px;
+  }
+
+  .ivu-input-group-append {
+    width: 60px;
+    background: #F7F4F2;
+    border-color: #E5E2DF;
+  }
+
+  .ivu-input-number {
+    width: 300px;
+
+    .ivu-input-number-handler-wrap {
+      width: 32px;
+      opacity: 1;
+      border-radius: 0 3px 3px 0;
+      border-left-color: #E5E2DF;
+    }
+
+    .ivu-input-number-handler-down-inner,
+    .ivu-input-number-handler-up-inner {
+      right: 10px;
+      top: 3px;
+      color: #BFBDBA;
+
+      &:hover {
+        color: #f93;
+      }
+    }
+
+    .ivu-input-number-handler-down {
+      border-top-color: #E5E2DF;
+    }
+  }
+}
+
+.line {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.w-form-wrap {
+  padding: 30px 20px 10px;
+  padding-right: 0;
+  background: white;
+  .form-item-wrap {
+    display: flex;
+  }
+  .ivu-form-item {
+    box-sizing: border-box;
+    width: 25%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  .ivu-form-item.w-50 {
+    width: 50%;
+  }
+  .block {
+    display: block!important;
+    width: 100%;
+  }
+  .ivu-form-item-content {
+    position: relative;
+    width: 100%;
+  }
+  .ivu-form-item.flex .ivu-form-item-content {
+    display: flex;
+  }
+  .ivu-date-picker {
+    display: block;
+  }
+  .ivu-select {
+    flex-grow: 1;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .m-input,
+  .ivu-input,
+  .city-select,
+  .ivu-date-picker,
+  .ivu-select-input,
+  .ivu-form-item-label,
+  .ivu-select-selection,
+  .ivu-select-placeholder,
+  .plateno-select .ivu-btn,
+  .ivu-select-selected-value,
+  .ivu-date-picker .ivu-icon {
+    height: 34px;
+    line-height: 32px;
+  }
+  .ivu-select-input {
+    height: 32px;
+  }
+  
+  .ivu-form-item-label {
+    padding: 0;
+  }
+  .ivu-select-multiple {
+    // overflow: hidden;
+  }
+  .ivu-select-multiple .ivu-select-selection {
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    // margin-right: -16px;
+    height: auto;
+  }
+
+  .form-item-rt {
+    position: absolute;
+    right: 0;
+    top: -34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: @primary-color;
+  }
+}

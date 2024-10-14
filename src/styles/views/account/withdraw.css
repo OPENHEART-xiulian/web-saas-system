@@ -1,0 +1,149 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.primaryColor {
+  color: #FF8000;
+}
+.withdraw .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.withdraw .ivu-btn {
+  width: 140px;
+}
+.withdraw .font1 {
+  color: #999;
+  font-size: 12px;
+}
+.withdraw_body {
+  background: #fff;
+  padding: 20px;
+}
+.withdraw_body .form {
+  margin-top: 30px;
+}
+.withdraw_body .form textarea {
+  border: 1px solid #d7dde4;
+}
+.withdraw_body .form .form_input {
+  width: 300px;
+  color: #666;
+}
+.withdraw_body .form .accept_account {
+  border: 1px solid #FF8000;
+  border-radius: 4px;
+  padding: 3px 10px;
+  color: #333;
+}
+.withdraw_body .form .money_row > span {
+  color: #FF8000;
+}
+.withdraw_body .form .money_row .help_icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.withdraw_body .form .out_row {
+  display: flex;
+  align-items: center;
+}
+.withdraw_body .form .out_row .out_all {
+  color: #FF8000;
+  font-size: 14px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.withdraw .withdrawModal {
+  text-align: left;
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 2px;
+  background: #fff;
+  position: relative;
+}
+.withdraw .withdrawModal .title {
+  line-height: 1;
+  font-size: 14px;
+  color: #332E29;
+}
+.withdraw .withdrawModal .close_icon {
+  fill: #332E29;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+}
+.withdraw .withdrawModal .content {
+  font-size: 12px;
+  color: #807D7C;
+  padding: 12px 0 20px 0;
+}
+.withdraw .withdrawModal .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.withdraw .withdrawModal .footer .ivu-btn {
+  width: 100px;
+  height: 40px;
+}
+.withdraw .withdrawModal .footer .m-input {
+  flex: 1;
+  margin-right: 10px;
+  height: 40px;
+}
+.withdraw .tipsModal {
+  text-align: left;
+  padding: 20px;
+  border-radius: 2px;
+  background: #fff;
+  position: relative;
+}
+.withdraw .tipsModal .title {
+  line-height: 1;
+  font-size: 14px;
+  color: #332E29;
+}
+.withdraw .tipsModal .close_icon {
+  fill: #332E29;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+}
+.withdraw .tipsModal .content {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+.withdraw .tipsModal .content > li {
+  position: relative;
+  padding-left: 10px;
+}
+.withdraw .tipsModal .content > li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #666;
+  position: absolute;
+  left: -1px;
+  top: 6px;
+}
+.withdraw .tipsModal .footer {
+  text-align: right;
+  margin-top: 7px;
+}
+.withdraw .tipsModal .footer .ivu-btn {
+  width: 90px;
+  height: 40px;
+}

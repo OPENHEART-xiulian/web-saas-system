@@ -1,0 +1,46 @@
+.majorTypeModal {
+  &.itemBox {
+    .itemsList {
+      >li {
+        width: 18%;
+        position: relative;
+        cursor: initial;
+
+        >.iconfont {
+          cursor: pointer;
+          position: absolute;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  .itemsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    >li {
+      width: 30%;
+      margin-right: 2%;
+      text-align: center;
+      line-height: 34px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      justify-content: center;
+      cursor: pointer;
+      i {
+        display: none;
+      }
+      &.active {
+        border-color: #FF8000;
+        color: #FF8000
+      }
+      &:hover {
+        i {
+          display: inline;
+        }
+      }
+    }
+  }
+}

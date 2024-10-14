@@ -1,0 +1,25 @@
+@import '../../styles/constant.less';
+
+.saas-btn {
+  &.saas-toggle__btn {
+    font-size: 14px;
+    padding  : 0 15px;
+
+    .iconfont {
+      display    : inline-block;
+      transition : 0.1s all linear;
+      font-size  : 10px;
+      color      : #aeaca9;
+      margin-left: 6px;
+      vertical-align: text-bottom;
+    }
+
+    .iconfont.down {
+      transform: rotate(180deg);
+    }
+
+    &:hover .iconfont {
+      color: inherit;
+    }
+  }
+}

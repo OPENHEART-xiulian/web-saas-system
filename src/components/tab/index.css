@@ -1,0 +1,59 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.saas-tab {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #FCFBFA;
+}
+.saas-tab .ivu-badge-count {
+  top: -6px;
+  right: 10px;
+}
+.saas-tab__item {
+  height: 46px;
+  line-height: 46px;
+  position: relative;
+  text-align: center;
+  color: #332E29;
+  font-weight: bold;
+  cursor: pointer;
+}
+.saas-tab__item.active {
+  color: #FF8000;
+  position: relative;
+  background: #fff;
+}
+.saas-tab__item.active::before {
+  content: '';
+  background-color: #FF8000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+.saas-tab__right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 20px;
+  height: 100%;
+}
+.saas-tab__right .ivu-btn {
+  margin-left: 10px;
+  padding: 0 15px;
+  font-size: 14px;
+  box-shadow: none;
+  height: 34px;
+}

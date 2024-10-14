@@ -1,0 +1,85 @@
+@import './../constant.less';
+
+.class-scoll {
+  // max-height: 605px;
+  height: 600px;
+  overflow: auto;
+
+  .first-list {
+    padding: 0 15px;
+    border-bottom: 1px solid #e5e2df;
+  }
+
+  li {
+    position: relative;
+    line-height: 40px;
+    cursor: pointer;
+    .font();
+
+    span {
+      display: block;
+      padding: 0 15px;
+      border-bottom: 1px solid #e5e2df;
+      .ellipsis();
+    }
+  }
+
+  .active {
+    background: #FFE8D1;
+    .font(14px, @primary-color);
+
+    // >.hid {
+    //   display: block;
+    // }
+
+    ul {
+      background: #fff;
+    }
+
+    >.ivu-icon {
+      margin-top: 14px;
+      color: @primary-color;
+      // transform: rotate(180deg);
+    }
+  }
+
+  .cactive {
+    color: @primary-color;
+
+    // >.hid {
+    //   display: block;
+    // }
+
+    .ivu-icon {
+      margin-top: 14px;
+      color: @primary-color;
+      // transform: rotate(180deg);
+    }
+  }
+
+  .tactive {
+    color: @primary-color;
+  }
+
+  ul {
+    // display: none;
+
+    span {
+      padding: 0 30px;
+    }
+  }
+
+  .ivu-icon {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    margin-top: 18px;
+    .font(12px, #BFBDBA);
+  }
+
+  .last-child {
+    span {
+      padding: 0 12px 0 45px;
+    }
+  }
+}

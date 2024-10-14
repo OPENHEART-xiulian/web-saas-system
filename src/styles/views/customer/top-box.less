@@ -1,0 +1,97 @@
+@import './../../constant.less';
+
+.top-box {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 20px 0 30px;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(51, 46, 41, 0.05);
+  &.box-tip {
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    line-height: normal;
+    color: #aaa;
+    font-size: 12px;
+    .ivu-icon {
+      font-size: 16px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+  .box-item {
+    width: 20%;
+    text-align: center;
+    .font(12px, #332E29);
+    .item-name {
+      cursor: pointer;
+      &:hover {
+        color: @primary-color;
+        text-decoration: underline;
+      }
+    }
+    p {
+      &:first-child {
+        .ivu-icon {
+          margin-left: 2px;
+          cursor: pointer;
+          .font(14px, #E5E2DF);
+        }
+      }
+  
+      &:nth-child(2) {
+        margin: 10px 0 14px;
+        font-size: 30px;
+        font-family: DINAlternate-Bold;
+      }
+  
+      &:nth-child(3) {
+        font-size: 14px;
+  
+        .iconfont {
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+  
+      .pop-icon {
+        margin-right: 4px;
+        vertical-align: middle;
+        .font(16px, @primary-color);
+      }
+
+      .pop-content {
+        vertical-align: text-top;
+      }
+    }
+  }
+}
+
+.not-open-box {
+  justify-content: flex-start;
+
+  .box-item {
+    width: 20%;
+    border-right: 1px solid #E5E2DF;
+  }
+
+  .box-right {
+    margin-left: 80px;
+    padding: 26px 0;
+    .font(12px, #807D7C);
+  }
+
+  .ivu-btn {
+    .size(80px, 26px);
+    .font(12px, @theme-black);
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 2px;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+}

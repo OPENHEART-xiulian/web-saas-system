@@ -1,0 +1,53 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.w-bread {
+  display: flex;
+  justify-content: space-between;
+}
+.w-bread > span {
+  font-weight: bold;
+  font-size: 14px;
+  color: #332E29;
+  padding: 20px 0;
+}
+.w-bread .slot {
+  line-height: 60px;
+}
+.w-bread .f-right {
+  float: right;
+}
+.w-bread .f-right .ivu-btn {
+  margin-left: 16px;
+}
+.w-bread .f-right .ivu-btn-default {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-color: #fff;
+}
+.w-bread .f-right .ivu-btn-default i {
+  margin-left: 6px;
+  font-size: 14px;
+  color: #BFBDBA;
+}
+.w-bread .f-right .ivu-btn-default:hover {
+  border-color: #f93;
+}
+.w-bread .f-right .ivu-btn-default:hover i {
+  color: #f93;
+}
+.w-bread .f-right .ivu-btn-error .iconfont {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.w-bread .f-right .ivu-btn-primary {
+  box-shadow: 0 2px 4px 0 rgba(255, 128, 0, 0.3);
+}

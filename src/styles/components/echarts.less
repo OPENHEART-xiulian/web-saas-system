@@ -1,0 +1,47 @@
+@import '../constant.less';
+
+.charts-content {
+  min-width: 460px;
+  margin-right: 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+  .size(50%, 353px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .echarts {
+    .size(100%, 300px);
+  }
+
+  .charts-title {
+    padding: 0 20px;
+    background: #FCFBFA;
+    font-weight: bold;
+    .height(50px);
+    .font();
+  }
+
+  .ivu-btn-group {
+    float: right;
+    margin: 9px 0;
+
+    .ivu-btn {
+      height: 32px;
+      padding: 4px 15px;
+      color: #807D7C;
+      .b-color(#FCFBFA, #E5E2DF);
+
+      &:hover {
+        color: @primary-color;
+        .b-color(#fff, @primary-color);
+      }
+    }
+
+    .active {
+      color: @primary-color;
+      .b-color(#fff, @primary-color);
+    }
+  }
+}

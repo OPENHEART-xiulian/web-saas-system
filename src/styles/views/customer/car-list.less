@@ -1,0 +1,68 @@
+@import './../../constant.less';
+
+.car-list {
+  .top-box {
+    justify-content: flex-start;
+  }
+
+  .box-item {
+    width: 16%;
+  }
+
+  .filter-input {
+    padding: 20px 20px 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    .ivu-input-wrapper {
+      width: 350px;
+    }
+
+    .ivu-input-group-append {
+      .size(60px, 37px);
+      .font(14px, #fff);
+      .b-color(@primary-color);
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+  
+  .screen-top {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(51, 46, 41, 0.05);
+
+    .screen-btn {
+      display: block;
+      .size(130px, 34px);
+      line-height: 34px;
+      text-align: center;
+      .font(12px, @theme-black);
+      background: #F7F4F2;
+      cursor: pointer;
+
+      .ivu-icon {
+        margin-left: 4px;
+        vertical-align: middle;
+        .font(14px, @theme-black);
+      }
+    }
+  }
+
+  .search-form {
+    margin-bottom: 0;
+    padding: 12px 20px 20px;
+    background: #FCFBFA;
+
+    .ivu-form-item-label {
+      font-size: 12px;
+    }
+
+    .form-btn {
+      margin-top: 0;
+      padding-top: 12px;
+      border: 0;
+    }
+  }
+}

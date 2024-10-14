@@ -1,0 +1,39 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.self_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.self_modal_box {
+  position: relative;
+  width: 400px;
+  background: #fff;
+  margin-top: 200px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 1;
+  border-radius: 4px;
+}
+.self_modal_box .close_icon {
+  position: absolute;
+  right: -60px;
+  top: -30px;
+  cursor: pointer;
+  fill: #fff;
+}

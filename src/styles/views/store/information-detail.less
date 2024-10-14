@@ -1,0 +1,46 @@
+@import './../../constant.less';
+
+.information-detail {
+  .information-box {
+    position: relative;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    border-radius: 3px;
+    .font();
+
+    .title {
+      padding: 15px 20px;
+      background: #FCFBFA;
+    }
+
+    ul {
+      padding: 20px;
+    }
+
+    li {
+      display: flex;
+      line-height: 36px;
+
+      span {
+        display: inline-block;
+
+        &:first-child {
+          min-width: 190px;;
+          width: 190px;
+          color: #807D7C;
+          vertical-align: top;
+        }
+      }
+
+      textarea {
+        padding: 10px 0;
+        border: 0;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

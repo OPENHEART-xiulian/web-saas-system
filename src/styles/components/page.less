@@ -1,0 +1,306 @@
+@import './../constant.less';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  .size(100%);
+  width: auto\9;
+
+  >section {
+    flex-grow: 1;
+    padding: 0 20px 60px;
+  }
+
+  >footer {
+    line-height: 17px;
+    text-align: center;
+    padding: 20px 0;
+    .font(12px, #737680);
+  }
+
+  >header {
+    z-index: 100;
+    min-height: @header-height;
+    background-color: @theme-black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .height(@header-height);
+
+    i.iconfont {
+      cursor: pointer;
+      font-size: inherit;
+      transition: all linear 0.1s;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .icon-btn {
+      text-align: center;
+      padding: 0 20px;
+      .font(20px, rgba(255, 255, 255, 0.9));
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .quick-entry {
+      display: flex;
+
+      .entry-item {
+        display: block;
+        cursor: pointer;
+        padding: 0 10px;
+        height: 60px;
+        color: #fff;
+
+        i.iconfont {
+          font-size: 16px;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+    .search {
+      border-radius: 100px;
+      height: 50%;
+      background: #3F3B36;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      margin-left: 20px;
+
+      input {
+        background: none;
+        box-shadow: none;
+        border: none;
+        color: #fff;
+        font-size:12px;
+        width: 224px;
+
+        &::-webkit-input-placeholder {
+          color: #C6C5C2;
+        }
+      }
+
+      .ivu-icon-ios-search {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .about {
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 5px;
+      color: rgba(255, 255, 255, 0.9);
+
+      .red-block {
+        .size(10px);
+        position: absolute;
+        right: 5px;
+        top: 17px;
+        background: #F22D00;
+        border: 0.83px solid #fff;
+        border-radius: 50%;
+      }
+
+      .opt-tip {
+        position: absolute;
+        top: 70px;
+        left: -60px;
+        line-height: 1;
+        padding: 10px;
+        white-space: nowrap;
+        color: #332E29;
+        box-shadow: 0px 2px 4px 0px #edebe8;
+        background: #fff;
+        border-radius: 3px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -5px;
+          left: 95px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #fff;
+          border-left: 0;
+          transform: rotate(45deg);
+        }
+
+        i {
+          margin-left: 6px;
+          .font(12px, #999);
+
+          &:hover {
+            color: #999;
+          }
+        }
+      }
+
+      .item {
+        display: flex;
+        padding: 0 10px;
+        position: relative;
+        cursor: pointer;
+
+        .icon {
+          margin: 0 10px;
+          .size(30px, 100%);
+
+          img {
+            object-fit: contain;
+            .size(100%);
+            height: auto\0; // ie11
+            height: auto\9; // ie10
+            margin-top: 15px\0;
+            margin-top: 15px\9;
+          }
+        }
+
+        a {
+          color: #fff;
+        }
+
+        .title {
+          flex-grow: 1;
+          font-size: 14px;
+
+          i {
+            margin-left: 8px;
+            font-size: 12px;
+          }
+        }
+
+        &:hover {
+          .item-content {
+            display: block;
+          }
+        }
+
+        .item-content {
+          display: none;
+          position: absolute;
+          top: 100%;
+          border-radius: 3px;
+          background-color: #fff;
+          box-shadow: 0px 2px 4px 0px #edebe8;
+          color: @theme-black;
+          .border(#f2f0ed);
+
+          &.contact {
+            left: 50%;
+            padding: 15px 0;
+            text-align: center;
+            width: 200px;
+            transform: translateX(-50%);
+
+            h2 {
+              margin-bottom: 2px;
+              font-weight: normal;
+              font-size: 22px;
+              .height(26px);
+            }
+
+            p {
+              .height(17px, 14px);
+              .font(12px, #807D7C);
+            }
+
+            .qr-code {
+              margin-top: 15px;
+              padding: 15px 0;
+              border-top: 1px solid rgba(247, 244, 242, 1);
+              .size(100%, 130px);
+
+              img {
+                .size(100px);
+              }
+            }
+          }
+
+          &.account {
+            right: 12px;
+            width: 150px;
+            padding-top: 10px;
+
+            .account-item {
+              padding: 0 25px;
+              line-height: 40px;
+              font-size: 14px;
+
+              i.iconfont {
+                margin-right: 5px;
+                vertical-align: middle;
+                .font(16px, @primary-color);
+              }
+
+              &:hover {
+                background-color: rgba(250, 244, 240, 1);
+              }
+            }
+          }
+        }
+      }
+
+      .message {
+        padding: 0 10px;
+        font-size: 20px;
+        position: relative;
+
+        &.active::before {
+          content: '';
+          position: absolute;
+          top: 15px;
+          right: 8px;
+          border-radius: 50%;
+          background: #F5222D;
+          .size(8px);
+        }
+      }
+
+      .document {
+        position: relative;
+
+        .ivu-select-dropdown {
+          width: 150px;
+          margin: 0;
+          padding: 10px 0 0;
+          border-radius: 3px;
+
+          .ivu-dropdown-item {
+            line-height: 40px;
+            padding: 0 25px;
+            font-size: 14px !important;
+            color: @theme-black;
+            text-align: center;
+          }
+        }
+
+        // .ivu-tooltip-arrow {
+        //   border-bottom-color: #fff;
+        // }
+
+        // .ivu-tooltip-inner {
+        //   background: #fff;
+        //   color: @theme-black;
+        // }
+      }
+    }
+  }
+}

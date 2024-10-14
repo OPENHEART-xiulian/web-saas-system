@@ -1,0 +1,87 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.saas-table {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(51, 46, 41, 0.05);
+}
+.saas-table .ivu-table-wrapper > .ivu-spin-fix {
+  border: none;
+}
+.saas-table .ivu-table-wrapper {
+  border: 0;
+  overflow: unset;
+}
+.saas-table .ivu-table tr:nth-child(2n) td {
+  background-color: #FCFBFA !important;
+}
+.saas-table .ivu-table th {
+  background-color: #fcfbfa;
+  border-bottom: 1px solid #E5E2DF;
+  font-weight: normal;
+  color: #332E29;
+  height: 50px;
+  font-size: 14px;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #332e29;
+}
+.saas-table .ivu-table th .ivu-table-sort,
+.saas-table .ivu-table th .ivu-table-filter {
+  margin-left: 0;
+}
+.saas-table .ivu-table th .ivu-table-sort i,
+.saas-table .ivu-table th .ivu-table-filter i {
+  color: #BFBDBA;
+}
+.saas-table .ivu-table th .ivu-table-sort .on,
+.saas-table .ivu-table th .ivu-table-filter .on {
+  color: #FF8000;
+}
+.saas-table .ivu-table td {
+  padding: 2px 0;
+  border-bottom: 1px solid #F7F4F2;
+  font-size: 14px;
+  color: #807D7C;
+}
+.saas-table .ivu-table::before,
+.saas-table .ivu-table::after {
+  display: none;
+}
+.saas-table .ivu-table .ivu-table-row.ivu-table-row-hover td {
+  background-color: #FFF9F2 !important;
+}
+.saas-table .ivu-table .ivu-table-cell {
+  overflow: unset;
+  text-overflow: initial;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.saas-table .ivu-table .ivu-table-fixed,
+.saas-table .ivu-table .ivu-table-fixed-right {
+  box-shadow: none;
+}
+.saas-table .ivu-table .ivu-table-fixed::before,
+.saas-table .ivu-table .ivu-table-fixed-right::before {
+  display: none;
+}
+.saas-table .ivu-table .ivu-table-tip td {
+  width: 100% !important;
+}
+.saas-table__pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,44 @@
+@import '../../constant.less';
+
+.card-poptip-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  .border(#F7F4F2);
+  border-bottom: 0;
+
+  th,
+  td {
+    padding: 10px;
+    white-space: normal;
+    .border(#F7F4F2);
+
+    &:first-child {
+      width: 32%;
+    }
+  }
+
+  th {
+    background: #FCFBFA;
+    color: @theme-black;
+  }
+
+  td {
+    color: #807D7C;
+  }
+}
+
+.card-poptip {
+  min-width: 400px;
+  max-width: 500px;
+
+  .ivu-poptip-body {
+    padding: 20px;
+  }
+
+  .ivu-poptip-body { // 层次不够被污染了啊，我也不想的。。。
+    .card-poptip-table tbody tr td {
+      background: inherit !important;
+    }
+  }
+} 

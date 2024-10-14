@@ -1,0 +1,100 @@
+@import './../../constant.less';
+
+.remind {
+  .self_modal_box{
+    border-radius: 10px;
+  }
+
+  .filter-input {
+    padding: 20px 20px 0;
+    background: #fff;
+
+    .ivu-input-wrapper {
+      width: 350px;
+    }
+
+    .ivu-input-group-append {
+      .size(60px, 37px);
+      .font(14px, #fff);
+      .b-color(@primary-color);
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+.remind-setting {
+  background: #fff;
+  padding: 20px;
+
+  .searchResult_info {
+    padding: 20px;
+    background: #fff;
+  }
+
+  .remindSettingItems {
+
+    .remindSettingItem {
+      margin-bottom: 20px;
+
+      .title {
+        margin-bottom: 12px;
+        padding: 12px 20px;
+        background: #FCFBFA;
+        font-weight: normal;
+      }
+
+      .contentItem {
+        display: flex;
+        align-items: center;
+
+        .left {
+          width: 200px;
+          text-align: right;
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          margin-left: 20px;
+
+          .tipsText {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .first_intro_modal{
+    text-align: center;
+    overflow: hidden;
+    p{
+      padding: 4px 0;
+    }
+    .descr{
+      color:#FF8000;
+      font-size:12px;
+      line-height: 1;
+      margin-top:10px;
+    }
+
+    .font1{
+      color:@theme-black;
+      line-height: 1;
+    }
+    .font2{
+      color:#BFBDBA;
+      font-size:14px;
+      line-height: 1;
+      margin:10px 0 20px 0;
+    }
+
+    .tipsImg{
+      margin-bottom: 20px;
+    }
+    .completeBtn{
+      margin-top:30px;
+    }
+  }
+}

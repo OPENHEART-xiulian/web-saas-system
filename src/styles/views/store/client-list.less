@@ -1,0 +1,35 @@
+@import './../../constant.less';
+
+.client-list {
+  .client-search {
+    margin-bottom: 20px;
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+    box-shadow: @box-shadow;
+
+    .ivu-input-wrapper {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .ivu-input {
+      height: 44px;
+    }
+
+    .ivu-input-group-append {
+      line-height: 42px;
+      padding: 0;
+      background: @primary-color;
+      border-color: @primary-color;
+      cursor: pointer;
+      .size(80px, 44px);
+      .font(16px, #fff);
+
+      span {
+        display: block;
+        .size(100%);
+      }
+    }
+  }
+}

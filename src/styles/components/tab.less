@@ -1,0 +1,41 @@
+@import './../constant.less';
+
+.tab {
+  // height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #FCFBFA;
+
+  span{
+    // max-width: 150px;
+    padding: 15px 22px;
+    position: relative;
+    text-align: center;
+    color: @theme-black;
+    font-weight: bold;
+    cursor: pointer;
+    &.active{
+      color: @primary-color;
+      position: relative;
+      background: #fff;
+      &::before{
+        content: '';
+        background-color: @primary-color;
+        .pos(absolute, 0, 0);
+        .size(100%, 3px);
+        top: auto\9;
+      }
+    }
+
+    .tips{
+      position: absolute;
+      right: -11px;
+      top: -7px;
+      background: red;
+      color:#fff;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

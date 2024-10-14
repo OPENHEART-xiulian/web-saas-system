@@ -1,0 +1,276 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  width: auto\9;
+}
+.page > section {
+  flex-grow: 1;
+  padding: 0 20px 60px;
+}
+.page > footer {
+  line-height: 17px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #737680;
+}
+.page > header {
+  z-index: 10;
+  min-height: 60px;
+  background-color: #332E29;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 60px;
+  line-height: 60px;
+}
+.page > header i.iconfont {
+  cursor: pointer;
+  font-size: inherit;
+  transition: all linear 0.1s;
+}
+.page > header i.iconfont:hover {
+  color: white;
+}
+.page > header .icon-btn {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.page > header .icon-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.page > header .quick-entry {
+  display: flex;
+}
+.page > header .quick-entry .entry-item {
+  display: block;
+  cursor: pointer;
+  padding: 0 10px;
+  height: 60px;
+  color: #fff;
+}
+.page > header .quick-entry .entry-item i.iconfont {
+  font-size: 16px;
+}
+.page > header .quick-entry .entry-item .title {
+  font-size: 14px;
+}
+.page > header .quick-entry .entry-item:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.page > header .search {
+  border-radius: 100px;
+  height: 50%;
+  background: #3F3B36;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  margin-left: 20px;
+}
+.page > header .search input {
+  background: none;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  width: 224px;
+}
+.page > header .search input::-webkit-input-placeholder {
+  color: #C6C5C2;
+}
+.page > header .search .ivu-icon-ios-search {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.page > header .about {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.page > header .about .red-block {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 5px;
+  top: 17px;
+  background: #F22D00;
+  border: 0.83px solid #fff;
+  border-radius: 50%;
+}
+.page > header .about .opt-tip {
+  position: absolute;
+  top: 70px;
+  left: -60px;
+  line-height: 1;
+  padding: 10px;
+  white-space: nowrap;
+  color: #332E29;
+  box-shadow: 0px 2px 4px 0px #edebe8;
+  background: #fff;
+  border-radius: 3px;
+}
+.page > header .about .opt-tip::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 95px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-left: 0;
+  transform: rotate(45deg);
+}
+.page > header .about .opt-tip i {
+  margin-left: 6px;
+  font-size: 12px;
+  color: #999;
+}
+.page > header .about .opt-tip i:hover {
+  color: #999;
+}
+.page > header .about .item {
+  display: flex;
+  padding: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+.page > header .about .item .icon {
+  margin: 0 10px;
+  width: 30px;
+  height: 100%;
+}
+.page > header .about .item .icon img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  height: auto\0;
+  height: auto\9;
+  margin-top: 15px\0;
+  margin-top: 15px\9;
+}
+.page > header .about .item a {
+  color: #fff;
+}
+.page > header .about .item .title {
+  flex-grow: 1;
+  font-size: 14px;
+}
+.page > header .about .item .title i {
+  margin-left: 8px;
+  font-size: 12px;
+}
+.page > header .about .item:hover .item-content {
+  display: block;
+}
+.page > header .about .item .item-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px #edebe8;
+  color: #332E29;
+  border: 1px solid #f2f0ed;
+}
+.page > header .about .item .item-content.contact {
+  left: 50%;
+  padding: 15px 0;
+  text-align: center;
+  width: 200px;
+  transform: translateX(-50%);
+}
+.page > header .about .item .item-content.contact h2 {
+  margin-bottom: 2px;
+  font-weight: normal;
+  font-size: 22px;
+  height: 26px;
+  line-height: 26px;
+}
+.page > header .about .item .item-content.contact p {
+  height: 17px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #807D7C;
+}
+.page > header .about .item .item-content.contact .qr-code {
+  margin-top: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #f7f4f2;
+  width: 100%;
+  height: 130px;
+}
+.page > header .about .item .item-content.contact .qr-code img {
+  width: 100px;
+  height: 100px;
+}
+.page > header .about .item .item-content.account {
+  right: 12px;
+  width: 150px;
+  padding-top: 10px;
+}
+.page > header .about .item .item-content.account .account-item {
+  padding: 0 25px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.page > header .about .item .item-content.account .account-item i.iconfont {
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #FF8000;
+}
+.page > header .about .item .item-content.account .account-item:hover {
+  background-color: #faf4f0;
+}
+.page > header .about .message {
+  padding: 0 10px;
+  font-size: 20px;
+  position: relative;
+}
+.page > header .about .message.active::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  border-radius: 50%;
+  background: #F5222D;
+  width: 8px;
+  height: 8px;
+}
+.page > header .about .document {
+  position: relative;
+}
+.page > header .about .document .ivu-select-dropdown {
+  width: 150px;
+  margin: 0;
+  padding: 10px 0 0;
+  border-radius: 3px;
+}
+.page > header .about .document .ivu-select-dropdown .ivu-dropdown-item {
+  line-height: 40px;
+  padding: 0 25px;
+  font-size: 14px !important;
+  color: #332E29;
+  text-align: center;
+}

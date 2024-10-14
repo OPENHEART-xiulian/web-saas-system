@@ -1,0 +1,44 @@
+@import './../constant.less';
+
+.child-tab {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+  .font(14px, #807D7C);
+
+  span {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #807D7C;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .active {
+    color: @primary-color;
+  }
+
+  .child {
+    padding: 15px 0 7px;
+  }
+
+  .third-child {
+    box-shadow: 0 -1px 0 0 rgba(247, 244, 242, 1);
+  }
+
+  .no-data {
+    display: block;
+    padding: 0;
+    text-align: center;
+    cursor: auto;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}

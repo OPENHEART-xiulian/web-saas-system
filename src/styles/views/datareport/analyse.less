@@ -1,0 +1,85 @@
+@import './../../constant.less';
+
+.analyse-list {
+  .analyse-top {
+    position: relative;
+    margin-bottom: 25px;
+    padding: 20px 20px 0;
+    background: #fff;
+    box-shadow: @box-shadow;
+
+    .active {
+      .ivu-input {
+        border-color: @primary-color;
+      }
+    }
+
+    .search-item {
+      padding-bottom: 20px;
+      text-align: right;
+      box-shadow: 0 1px 0 0 #f7f4f2;
+      display: flex;
+      align-items: center;
+      &__name {
+        font-weight:500;
+        flex-grow: 1;
+        text-align: left;
+        font-size: 18px;
+        color: #332E29;
+      }
+    }
+
+    .btn-group {
+      margin-right: 18px;
+      min-width: 200px;
+    }
+  
+    .ivu-date-picker {
+      display: inline-block;
+      width: 200px;
+    }
+
+    .date-line {
+      margin: 0 10px;
+      width: 15px;
+      .font(14px, #BFBDBA);
+    }
+
+    ul {
+      display: flex;
+      padding: 20px 0;
+      justify-content: space-between;
+    }
+
+    li {
+      p {
+        .font(14px, #807D7C);
+
+        &:nth-child(2) {
+          .font(20px, #332E29);
+        }
+      }
+    }
+  }
+
+  .analyse-content {
+    position: relative;
+    background: #fff;
+    box-shadow: @box-shadow;
+
+    .btn-group {
+      position: absolute;
+      right: 20px;
+      top: 70px;
+      z-index: 6;
+
+      .ivu-btn {
+        width: 80px;
+      }
+    }
+
+    .echarts {
+      .size(100%, 450px);
+    }
+  }
+}

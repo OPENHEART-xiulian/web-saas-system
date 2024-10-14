@@ -1,0 +1,133 @@
+@import './../../constant.less';
+
+.label-list {
+  .content {
+    position: relative;
+    margin-top: 8px;
+    padding: 12px 20px 10px;
+    background: #fff;
+    box-shadow: @box-shadow;
+  }
+
+  .w-alert {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    padding: 10px 0 20px;
+    .font();
+
+    span {
+      color: #807D7C;
+    }
+  }
+
+  .box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .box-item {
+      width: 20%;
+      margin-bottom: 10px;
+
+      &:nth-child(5n) {
+
+        >div {
+          margin-right: 0;
+        }
+      }
+
+      >div {
+        position: relative;
+        height: 100%;
+        margin-right: 10px;
+        padding: 20px 20px 67px;
+        border: 1px solid #E5E2DF;
+      }
+
+      .count {
+        position: absolute;
+        bottom: 48px;
+      }
+    }
+
+    .not-label {
+      padding: 0;
+
+      .iconfont {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        .font(20px, @primary-color);
+      }
+
+      >div {
+        min-height: 164px;
+        line-height: 164px;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      word-break: break-all;
+      .font(12px, #807D7C);
+
+      &:first-child {
+        .font();
+      }
+
+      &:nth-child(2) {
+        min-height: 34px;
+        margin: 8px 0 10px;
+      }
+    }
+
+    .opt-btn {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+
+      .ivu-poptip {
+        position: initial;
+        margin-top: 0;
+        margin-left: 8px;
+      }
+    }
+
+    .ivu-poptip {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      margin-top: 8px;
+
+      .ivu-icon {
+        font-size: 16px;
+
+        &::before {
+          content: "\F35B";
+        }
+      }
+
+      .ivu-poptip-popper {
+        min-width: 220px;
+
+        .ivu-btn {
+          font-size: 12px;
+        }
+      }
+
+      .ivu-btn-primary {
+        height: 26px;
+        padding: 0 5px;
+      }
+    }
+
+    .ivu-btn-text {
+      .font(14px, @primary-color);
+    }
+  }
+}

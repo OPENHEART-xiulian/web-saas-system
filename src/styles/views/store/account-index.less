@@ -1,0 +1,37 @@
+@import './../../constant.less';
+
+.store-account {
+  .content {
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+
+    p {
+      .font(12px, @theme-black);
+    }
+
+    .price {
+      margin: 0 0 4px;
+      font-weight: bold;
+      font-size: 36px;
+
+      span {
+        margin-left: 5px;
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+
+    .ivu-btn-text {
+      line-height: 1;
+      padding: 0 12px 0 8px;
+      border-right: 1px solid #807D7C;
+      vertical-align: inherit;
+      .font();
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}

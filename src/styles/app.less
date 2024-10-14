@@ -1,0 +1,569 @@
+@import './reset.less';
+@import './constant.less';
+
+html,
+#app,
+body {
+  height    : 100%;
+  min-height: 720px;
+  overflow: unset!important;
+}
+
+body {
+  background-color: @bg-color;
+  min-width       : @min-width;
+}
+
+.container {
+  margin   : 0 auto;
+  width    : 100%;
+  max-width: @min-width;
+}
+
+.flex {
+  display: flex;
+}
+.ac{
+  align-items: center;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+
+.space-between {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+}
+
+// 边距相关
+.mg-20 {
+  margin: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+// 白色背景
+.white-bg {
+  background-color: white;
+}
+
+/** 按钮样式 **/
+.ivu-btn {
+  // height    : 36px;
+  // padding   : 6px 20px;
+  font-size    : 14px;
+  border-radius: 3px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.ivu-btn-default {
+  color       : @theme-black;
+  background  : #fff;
+  border-color: #E5E0DA;
+}
+
+.ivu-btn-text {
+  height : auto;
+  padding: 0;
+  color  : @primary-color;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.ivu-btn-error {
+  background: #F22D00;
+  box-shadow: 0 2px 4px 0 rgba(242, 45, 0, 0.3);
+}
+
+.ivu-btn-warning {
+  background  : @primary-color;
+  border-color: @primary-color;
+}
+
+/** 弹窗背景 **/
+.model-cover {
+  min-width      : 1200px;
+  background     : rgba(0, 0, 0, 0.5);
+  z-index        : 10000;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  .pos(fixed, 0, 0);
+  .size(100%);
+}
+
+/* 城市选择组件 */
+.city-select {
+  display        : flex;
+  justify-content: space-between;
+  .height(40px);
+
+  .ivu-select {
+    width: 32% !important;
+    .height(inherit);
+
+    .ivu-select-selection,
+    .ivu-select-selection .ivu-select-selected-value,
+    .ivu-select-selection .ivu-select-placeholder {
+      .height(inherit);
+    }
+  }
+}
+
+.ivu-radio-group-button .ivu-radio-wrapper{
+  height: 34px;
+  line-height: 34px;
+  color: #332e29;
+}
+
+/* 获取验证码组件 */
+.vaildate {
+  position: relative;
+  display : inline-block;
+  width   : 140px;
+  .height(40px);
+
+  .ivu-btn {
+    border-radius: 3px;
+    .size(100%);
+  }
+
+  .time {
+    background   : rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    text-align   : center;
+    line-height  : inherit;
+    .pos(absolute, 0, 0);
+    .size(100%);
+    .font(14px, #fff);
+  }
+}
+
+/** 输入框样式 **/
+.ivu-input,
+.ivu-input-number,
+.ivu-select-input,
+.ivu-select-single .ivu-select-selection,
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-multiple .ivu-select-selection,
+.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder {
+  border-radius: 3px;
+  border-color : #E5E2DF;
+  .font(14px, @theme-black);
+
+  &::-webkit-input-placeholder {
+    .font(14px, #807D7C);
+  }
+
+  &:-moz-input-placeholder {
+    .font(14px, #807D7C);
+  }
+
+  &::-moz-input-placeholder {
+    .font(14px, #807D7C);
+  }
+
+  &:-ms-input-placeholder {
+    .font(14px, #807D7C);
+  }
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder {
+  .font(14px, #807D7C);
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+  font-size: 14px;
+}
+
+.ivu-select-multiple .ivu-tag {
+  margin: 5px 4px 5px 0;
+}
+
+.ivu-select-multiple .ivu-tag-text {
+  .font(14px, @theme-black);
+}
+
+.ivu-input-group-with-append .ivu-input,
+.ivu-input-group-prepend .ivu-input {
+  padding-right            : 7px;
+  border-top-left-radius   : 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+
+.ivu-input[disabled],
+fieldset[disabled] .ivu-input {
+  color: @theme-black;
+}
+
+.ivu-radio-inner {
+  border-color: #BBBEC4;
+  .size(18px);
+
+  &::after {
+    .size(12px);
+  }
+}
+
+.ivu-checkbox-inner {
+  border-color: #BBBEC4;
+  .size(18px);
+}
+
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  &::after {
+    top: 0;
+    .size(8px, 12px);
+  }
+}
+
+.ivu-checkbox-indeterminate .ivu-checkbox-inner {
+  &::after {
+    width: 12px;
+    top  : 7px;
+  }
+}
+
+.ivu-select {
+  &:focus {
+    outline     : 0;
+    border-color: #f93;
+  }
+
+  .ivu-select-dropdown {
+    .ivu-select-not-found {
+      li {
+        font-size: 14px;
+      }
+    }
+
+    .ivu-select-dropdown-list {
+      .ivu-select-item {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+.ivu-form {
+  .ivu-form-item-label {
+    font-size: 14px;
+    color:#666;
+  }
+}
+
+.ivu-message {
+  z-index: 1111;
+}
+
+// 提示条
+.ivu-message-notice {
+  .font(14px, @theme-black);
+
+  .ivu-icon {
+    font-size: 16px;
+  }
+}
+
+// 级联 
+.ivu-cascader {
+  .ivu-select-dropdown {
+    li {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.rotate-360 {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+/* 解决input自动填充黄色背景 */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.ivu-modal {
+  margin-bottom: 100px;
+}
+
+// 提示条黄色
+.w-alert {
+  background   : #FFF3E2;
+  border       : 1px solid #FFE8C5;
+  border-radius: 3px;
+
+  .ivu-alert-desc {
+    color: @theme-black;
+  }
+}
+
+.mT20 {
+  margin-top: 20px;
+}
+
+// 暂时保留
+.ivu-table-cell {
+  padding-left : 10px;
+  padding-right: 10px;
+}
+
+// 分类表格
+.catetable-wrap {
+  position       : relative;
+  display        : flex;
+  justify-content: space-between;
+  padding        : 20px;
+  background     : white;
+  box-shadow     : @box-shadow;
+
+  .catetable-left {
+    width    : 200px;
+    min-width: 200px;
+    position : relative;
+    border   : 1px solid #f7f4f2 ;
+
+    &__title {
+      height      : 50px;
+      line-height : 50px;
+      padding-left: 20px;
+      background  : #fcfbfa;
+      font-size   : 14px;
+      color       : #332e29;
+    }
+
+    &__list {
+      .ivu-tree-empty {
+        line-height: 200px;
+        text-align : center;
+      }
+
+      .ivu-tree-children {
+        color     : #807d7c;
+        font-size : 14px;
+        padding   : 0;
+        border-top: 1px solid #f7f4f2;
+
+        li {
+          padding-left: 10px;
+          line-height : 50px;
+          overflow    : hidden;
+          margin      : 0;
+          position: relative;
+
+          // 节点图标
+          .ivu-tree-arrow {
+            user-select : none;
+            position: absolute;
+            right: 18px;
+          }
+
+          // 节点标题
+          .ivu-tree-title {
+            width: 100%;
+          }
+
+          .ivu-tree-title:hover,
+          .ivu-tree-title-selected {
+            color           : @primary-color;
+            background-color: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .catetable-action {
+    margin-bottom: 20px;
+    display      : flex;
+    align-items  : center;
+
+    .ivu-select {
+      width: 200px;
+    }
+  }
+
+  .catetable-right {
+    position    : relative;
+    width       : calc(100% - 200px);
+    padding-left: 20px;
+
+    .saas-table {
+      padding   : 0;
+      box-shadow: none;
+
+      .saas-table__content {
+        // border-left : 1px solid #f7f4f2;
+        // border-right: 1px solid #f7f4f2;
+      }
+    }
+  }
+}
+.cateQuery{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding:20px;
+  padding-bottom: 0;
+  .ivu-select-single .ivu-select-selection{
+    min-width: 160px;
+    height: 34px;
+    margin-right: 20px;
+  }
+  .saas-btn{
+    height: 34px;
+    min-width: 100px;
+  }
+}
+
+// 车牌号码
+.saas-plateno {
+  display      : inline-block;
+  min-width    : 88px;
+  padding      : 4px 8px;
+  font-size    : 14px;
+  border-radius: 2px;
+  text-align   : center;
+  color        : #fff;
+  background   : #336ee3;
+  box-shadow   : 0 0 0 1px #fff, 0 0 0 2px #336ee3;
+
+  // 暂无车牌号
+  &.no-plateno {
+    color     : #332e29;
+    background: #e5e2df;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e5e2df;
+  }
+}
+
+// 一些鼠标移上去显示帮助的poptip
+.saas-poptip {
+  .title {
+    font-size: 14px; 
+    color: #332E29; 
+    margin-right: 10px;
+  }
+  .iconfont {
+    color: #BFBDBA; 
+    font-size: 16px; 
+    margin-right: 2px; 
+    position: relative; 
+    top: 1px; 
+    cursor: pointer;
+  }
+  .ivu-poptip-inner {
+    padding: 20px 24px;
+  }
+  .ivu-poptip-popper[x-placement="bottom-start"] .ivu-poptip-arrow {
+    left: 20px;
+  }
+  .ivu-poptip-title {
+    font-size:16px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:600;
+    color:rgba(66,60,53,1);
+    line-height:24px;
+    padding: 0;
+    .iconfont {
+      font-size: 24px;
+      color: #BFBDBA;
+      margin-right: 10px;
+      vertical-align: sub;
+      position: relative;
+      top: -1px;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .ivu-poptip-body {
+    padding: 10px 0;
+    padding-left: 38px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(141,132,122,1);
+    line-height:22px;
+  }
+}
+
+//btn-group
+.ivu-radio-group-button .ivu-radio-wrapper{
+  padding:0 20px;
+}
+
+.ivu-radio-group-button .ivu-radio-wrapper-checked{
+  color:@primary-color;
+}
+
+
+.ivu-modal-header{
+  padding:12px 20px;
+}
+.ivu-modal-body{
+  padding: 20px;
+}
+.ivu-modal-footer{
+  border-top:none;
+}
+.cursorP{
+  cursor: pointer;
+}
+.primaryColor{
+  color:@primary-color;
+}

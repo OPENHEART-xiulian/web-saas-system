@@ -1,0 +1,122 @@
+@import './../../../constant.less';
+
+.stepPosition{
+  position: absolute;
+  left: -49%;
+  width: 100%;
+  top: 30px;
+  padding-left: 0;
+  transform: translateX(6%);
+  text-align: center;
+}
+
+.bindingCard{
+
+  &_body{
+    background: #fff;
+
+    .steps{
+      background:#fcfbfa;
+      height: 120px;
+      overflow: hidden;
+
+      .ivu-steps{
+        width: 500px;
+        margin:0 auto;
+        margin-top: 37px;
+        .ivu-steps-item {
+          overflow: unset;
+        }
+        .ivu-steps-head {
+          position: relative;
+          background: #fcfbfa;
+        }
+        .ivu-steps-main{
+          position: absolute;
+          top: 30px;
+          z-index: 1000;
+          left: -84px;
+          text-align: center;
+        }
+        .ivu-steps-content {
+          width: 200px;
+          padding-left: 0;
+        }
+
+        .ivu-steps-status-process .ivu-steps-content {
+          color: #332e29;
+        }
+        // .ivu-steps-item.ivu-steps-status-finish .ivu-steps-content{
+        //   .stepPosition()
+        // }
+        // .ivu-steps-item.ivu-steps-status-process .ivu-steps-content{
+        //   .stepPosition()
+        // }
+        // .ivu-steps-item.ivu-steps-status-wait .ivu-steps-content{
+        //   .stepPosition()
+        // }
+      }
+    }
+
+    .bindingCard_steps{
+      padding: 20px;
+    }
+  }
+
+  .ivu-steps .ivu-steps-head{
+    background: none;
+  }
+
+}
+
+.firstStep{
+
+  .form{
+
+    .form_input{
+      width: 300px;
+      display: inline-block;
+    }
+    
+    .rightTips{
+      margin-left:10px;
+      .font(12px,#999)
+    }
+  }
+
+  .ivu-btn{
+    width: 140px;
+  }
+}
+
+.secondStep{
+  text-align: center;
+
+  .ivu-btn{
+    width:300px;
+  }
+
+  .primaryColor{
+    color:@primary-color;
+  }
+
+  .content{
+    width:90%;
+    margin:0 auto;
+    font-size:14px;
+    color:#666;
+
+    .noVertification{
+      color:#BFBDBA;
+    }
+  }
+  .ivu-steps .ivu-steps-tail{
+    left:16px;
+  }
+
+  .form_input{
+    width:300px;
+    margin:20px auto;
+    margin-top:40px;
+  }
+}

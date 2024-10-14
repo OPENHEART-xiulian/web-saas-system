@@ -1,0 +1,51 @@
+@import './../constant.less';
+
+.w-bread {
+  display: flex;
+  justify-content: space-between;
+  >span{
+    font-weight: bold;
+    .font(14px, @theme-black);
+    padding:20px 0;
+  }
+  .slot{
+    line-height: 60px;
+  }
+
+  .f-right {
+    float: right;
+
+    .ivu-btn {
+      margin-left: 16px;
+    }
+
+    .ivu-btn-default {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      border-color: #fff;
+
+      i {
+        margin-left: 6px;
+        .font(14px, #BFBDBA);
+      }
+
+      &:hover {
+        border-color: #f93;
+
+        i {
+          color: #f93;
+        }
+      }
+    }
+
+    .ivu-btn-error {
+      .iconfont {
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    }
+
+    .ivu-btn-primary {
+      box-shadow: 0 2px 4px 0 rgba(255, 128, 0, 0.3);
+    }
+  }
+}

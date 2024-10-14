@@ -1,0 +1,57 @@
+
+.store-category.w-table{
+  border-radius: 3px;
+  background: white;
+  padding: 10px 20px;
+  table{
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+    th{
+      text-align: left;
+      font-size: 14px;
+      color: #332E29;
+      height: 50px;
+      &:first-child{
+        padding-left: 20px;
+      }
+      &:last-child{
+        padding-right: 20px;
+      }
+    }
+    td{
+      border-bottom: none;
+      padding-top: 10px;
+      &:first-child{
+        padding-left: 20px;
+      }
+      &:last-child{
+        padding-right: 20px;
+      }
+      .ivu-checkbox{
+        position: relative;
+        bottom: 5px;
+      }
+    }
+    tbody{
+      .no-data{
+        text-align: center;
+        height: 80px;
+      }
+      tr:nth-child(even){
+        td{
+          background: #F7F4F2;
+        }
+      }
+    }
+    tfoot{
+      td{
+        height: 75px;
+        box-shadow: inset 0px 1px 0px 0px rgba(229, 226, 223, 1);
+        .ivu-btn{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

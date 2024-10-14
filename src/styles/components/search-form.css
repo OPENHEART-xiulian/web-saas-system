@@ -1,0 +1,116 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.search-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(51, 46, 41, 0.05);
+}
+.search-form .ivu-input-icon + .ivu-input {
+  padding-right: 10px;
+}
+.search-form .form-box {
+  display: flex;
+  flex-wrap: wrap!important;
+}
+.search-form .form-item {
+  flex-grow: unset!important;
+  padding-right: 20px;
+  width: 25%;
+}
+.search-form .form-item:nth-child(4n) {
+  padding-right: 0;
+}
+.search-form .form-item .ivu-form-item {
+  margin-bottom: 8px;
+}
+.search-form .form-item .ivu-btn {
+  min-width: 90px;
+}
+.search-form .form-item .ivu-input {
+  padding-left: 10px;
+}
+.search-form .form-item .ivu-form-item-label {
+  line-height: initial;
+  padding: 0;
+  font-size: 14px;
+  color: #332E29;
+}
+.search-form .form-item .ivu-date-picker {
+  display: inline;
+}
+.search-form .form-item .ivu-form-item-content {
+  margin-top: 6px;
+}
+.search-form .form-item .ivu-radio-wrapper {
+  margin-right: 20px;
+  color: #332E29;
+}
+.search-form .form-item .ivu-input-group-append {
+  width: 60px;
+  background: #E5E2DF;
+  border-radius: 3px;
+  border-color: #E5E2DF;
+  font-size: 14px;
+  color: #332E29;
+}
+.search-form .form-item .form-number {
+  display: flex;
+}
+.search-form .form-item .number-item {
+  display: flex;
+  width: 50%;
+  flex-grow: 1;
+  font-size: 0;
+}
+.search-form .form-item .number-item .ivu-input-group-append {
+  width: auto;
+  min-width: 40px;
+  height: 36px;
+  background: #F7F4F2;
+  border: 1px solid #E5E2DF;
+  border-left: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #332E29;
+}
+.search-form .form-item .number-item .ivu-input {
+  flex-grow: 1;
+  height: 36px;
+}
+.search-form .form-item .multiple-date {
+  display: flex;
+}
+.search-form .form-item .multiple-date__item {
+  width: 50%;
+  flex-grow: 1;
+}
+.search-form .form-item .doubleText {
+  display: flex;
+  align-items: center;
+}
+.search-form .form-item .doubleText .splitSympol {
+  margin: 0 10px;
+}
+.search-form .form-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding-top: 20px;
+  padding-right: 0;
+  border-top: 1px solid #f7f4f2;
+  text-align: right;
+}
+.search-form .form-btn .ivu-btn-default {
+  margin-right: 8px;
+}

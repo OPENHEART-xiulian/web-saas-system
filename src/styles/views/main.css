@@ -1,0 +1,124 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.layout {
+  height: 100%;
+  display: flex;
+}
+.layout .mask {
+  position: fixed;
+  top: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+.layout aside {
+  position: relative;
+  transition: all linear 0.1s;
+  min-width: 100px;
+  width: 100px;
+  background: white;
+}
+.layout aside .logo {
+  font-size: 0;
+  transition: all linear 0.1s;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+}
+.layout aside .logo img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+.layout aside.icon-menu {
+  min-width: 60px;
+  width: 60px;
+}
+.layout aside.icon-menu .logo {
+  padding: 0 10px;
+}
+.layout aside.icon-menu .side-nav .nav-item {
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.layout aside.icon-menu .item-title {
+  padding: 0;
+}
+.layout .page {
+  position: relative;
+  flex-grow: 1;
+}
+.layout .page > section {
+  overflow: auto;
+}
+.layout .page > section .add-page {
+  padding-bottom: 60px;
+}
+.layout .page .toggle-pad {
+  padding-left: 120px;
+}
+.layout .page .toggle-pad .bottom-submit {
+  padding-left: 118px;
+}
+.layout .other-link {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+.layout .other-link a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.layout .other-link a:last-child {
+  border-bottom: none;
+}
+.layout .other-link a img {
+  width: 100%;
+  height: 100%;
+}
+.layout .advertising {
+  width: 500px;
+  height: 380px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  z-index: 20;
+  background: #CCCCCC;
+}
+.layout .advertising img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.layout .advertising .dele {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(245, 238, 238, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+@import './../../constant.less';
+
+.account-wrap {
+  .account-content {
+    padding: 40px 0 10px 90px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    color: @theme-black;
+
+    li {
+      margin-bottom: 28px;
+
+      span {
+        display: inline-block;
+
+        &:nth-child(1) {
+          width: 60px; 
+          margin-right: 40px;
+          text-align: right;
+          vertical-align: middle;
+        }
+
+        &:nth-child(2) {
+          width: 140px;
+          margin-right: 40px;
+        }
+
+        img {
+          width: 50px;
+          vertical-align: bottom;
+        }
+      }
+
+      .ivu-btn {
+        span {
+          width: auto;
+          margin-right: 0;
+        }
+      }
+
+      .list-name {
+        display: inline-block;
+        width: 180px;
+        vertical-align: bottom;
+        word-break: break-all;
+
+        p {
+          &:first-child {
+            display: inline-block;
+            line-height: 1;
+          }
+        }
+      }
+
+      .name-opt {
+        display: inline-block;
+        margin-top: 6px;
+        vertical-align: top;
+
+        .ivu-btn {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import './../constant.less';
+
+.image-slider-bg {
+  .carousel-con {
+    display: inline-block;
+    width: 800px;
+    position: relative;
+    border-radius: 3px;
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.1s linear;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+      i {
+        font-size: 30px;
+        color: inherit !important;
+        line-height: inherit !important;
+      }
+    }
+    .focus-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 0.1s linear;
+      text-align: center;
+      line-height: 50px;
+      color: rgba(255, 255, 255, 0.5);
+      .size(50px);
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      i {
+        font-size: 30px;
+        color: inherit !important;
+        line-height: inherit !important;
+      }
+      &.left-btn {
+        left: 10px;
+      }
+      &.right-btn {
+        right: 10px;
+      }
+    }
+  }
+  .image-item {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    .height(460px);
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+      object-fit: contain;
+    }
+  }
+}

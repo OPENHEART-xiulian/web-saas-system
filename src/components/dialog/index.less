@@ -1,0 +1,71 @@
+@import '../../styles/constant.less';
+
+.saas-dialog {
+  .ivu-modal-header {
+    padding                : 15px 20px 12px;
+    background             : #FCFBFA;
+    border-bottom-color    : #F7F4F2;
+    border-top-left-radius : 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .ivu-modal-header-inner {
+    font-weight: normal;
+    font-size  : 16px;
+    color      : @theme-black;
+  }
+
+  .ivu-modal-close {
+    right: 20px;
+
+    .ivu-icon-ios-close-empty {
+      color: #807D7C;
+    }
+  }
+
+  .ivu-modal-body {
+    padding: 20px;
+  }
+
+  .ivu-modal-content {
+    border-radius: 6px;
+  }
+
+  .ivu-modal-footer {
+    margin          : 0 20px;
+    padding         : 20px 0 30px;
+    border-top-color: #F7F4F2;
+
+    .ivu-btn {
+      padding  : 0;
+      font-size: 14px;
+      .size(90px, 36px);
+    }
+
+    .ivu-btn-text {
+      color : @theme-black;
+      border: 1px solid #E5E0DA;
+
+      &:hover {
+        border-color: @primary-color;
+        color       : @primary-color;
+      }
+    }
+
+    .ivu-btn-primary {
+      background  : #F22D00;
+      border-color: #F22D00;
+      color       : #fff;
+    }
+  }
+
+  .ivu-form {
+    .ivu-radio-wrapper,
+    .ivu-checkbox-wrapper,
+    .ivu-form-item-label,
+    .ivu-input {
+      font-size: 14px;
+      color    : @theme-black;
+    }
+  }
+}

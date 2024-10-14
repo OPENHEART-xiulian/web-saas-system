@@ -1,0 +1,65 @@
+@import './../../constant.less';
+
+.backup-wrap {
+  .backup-content {
+    background: white;
+    padding: 20px 20px 100px;
+    &__title {
+      font-weight:500;
+      text-align: left;
+      font-size: 18px;
+      color: #332E29;
+      font-weight: normal;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #E5E2DF;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 24px 20px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgba(102,102,102,0.1);
+
+    .iconfont {
+      margin-right: 12px;
+      padding: 14px;
+      border-radius: 50%;
+      vertical-align: text-bottom;
+      .font(22px, #fff);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .text {
+      display: inline-block;
+    }
+
+    p {
+      line-height: 22px;
+      font-weight: bold;
+      .font(16px, #332E29);
+
+      &:nth-child(2) {
+        font-weight: normal;
+        .font(12px, #807D7C);
+      }
+    }
+  }
+
+  .ivu-col {
+    &:nth-child(4n) .item {
+      margin-right: 0;
+    }
+  }
+}

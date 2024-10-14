@@ -1,0 +1,382 @@
+@import '../../constant.less';
+
+.workorder-balance {
+  .order-detail {
+    padding: 15px 20px;
+    background: #FCFBFA;
+    color: #807D7C;
+    .font(12px, #807D7C);
+
+    span {
+      padding: 0 10px;
+      border-right: 1px solid #807D7C;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    .time-item {
+      span {
+        padding: 0;
+        border-right: 0;
+      }
+
+      .ivu-btn {
+        height: auto;
+        padding: 2px 7px;
+      }
+    }
+  }
+
+  .balance-content {
+    padding: 18px 20px 340px;
+    background: #fff;
+    box-shadow: @box-shadow;
+  }
+
+  .price {
+    .font(14px, #F22D00);
+    font-weight: bold;
+  }
+
+  .first-table {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F7F4F2;
+
+    .last-td {
+      text-align: right;
+
+      .price {
+        color: @theme-black;
+      }
+    }
+
+    .img-block {
+      display: inline-block;
+    }
+
+    img {
+      margin-right: 16px;
+      .size(40px);
+    }
+
+    td {
+      .font();
+    }
+
+    .work-first {
+      display: flex;
+    }
+
+    .ivu-btn-text {
+      margin-left: 20px;
+      vertical-align: inherit;
+      .font();
+    }
+  }
+
+  .opt-btn {
+    margin-top: 15px;
+    text-align: right;
+
+    .ivu-btn {
+      width: 90px;
+      margin-bottom: 30px;
+      margin-left: 10px;
+
+      .ivu-icon {
+        display: none;
+      }
+    }
+
+    .ivu-icon {
+      margin-right: 8px;
+    }
+
+    .active {
+      color: @primary-color;
+      border-color: @primary-color;
+
+      .ivu-icon {
+        display: inline-block;
+      }
+    }
+
+    p {
+      .font();
+
+      &:last-child {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .expand-table {
+    margin: 10px 0;
+
+    table {
+      border-top: 1px solid #F7F4F2;
+    }
+  }
+
+  .pay-content {
+    display: flex;
+    border-bottom: 1px solid #F7F4F2;
+
+    .pay-title {
+      margin-bottom: 18px;
+      color: @theme-black;
+      border-bottom: 1px solid #F7F4F2;
+      font-weight: bold;
+      .height(50px);
+    }
+
+    .pay-box {
+      display: inline-block;
+      width: 50%;
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    } 
+
+    li {
+      display: inline-block;
+    }
+
+    .pay-way {
+      .ivu-checkbox-wrapper {
+        margin: 2px 16px 20px 0;
+        padding: 2px 26px 2px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        .font(14px, @theme-black);
+        .border(#E5E2DF);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          border-color: @primary-color;
+          color: @primary-color;
+        }
+      }
+
+      .ivu-checkbox {
+        display: none;
+      }
+
+      .ivu-checkbox-wrapper-checked {
+        border-color: @primary-color;
+        color: @primary-color;
+      }
+
+      .iconfont {
+        margin-right: 10px;
+        font-size: 36px;
+        vertical-align: middle;
+      }
+
+      .icon-xianjin {
+        color: @primary-color;
+      }
+
+      .icon-zhifu,
+      .icon-yinhangqia {
+        color: #317EF3;
+      }
+
+      .icon-zhifubao {
+        color: #03AAEF;
+      }
+
+      .icon-weixin {
+        color: #05AF10;
+      }
+    }
+
+    .pay-price {
+      .ivu-input-wrapper {
+        width: 135px;
+      }
+
+      .ivu-input-group-prepend {
+        width: 50px;
+        background: #F7F4F2;
+        border-color: #E5E2DF;
+        border-radius: 3px;
+        .font();
+      }
+
+      li {
+        margin-bottom: 16px;
+        vertical-align: text-top;
+
+        &:first-child {
+          .errTip {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .add {
+        display: inline-block;
+        margin-bottom: 7px;
+        padding: 0 3px 0 7px;
+        color: #000;
+        vertical-align: bottom;
+      }
+
+      p {
+        margin-bottom: 4px;
+        color: @theme-black;
+      }
+
+      .errTip {
+        margin-top: 2px;
+        margin-left: 22px;
+        .font(12px, #F22D00);
+      }
+    }
+  }
+
+  .card-content {
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    border-bottom: 1px solid #F7F4F2;
+
+    .card-title {
+      margin-bottom: 18px;
+      color: @theme-black;
+      border-bottom: 1px solid #F7F4F2;
+      font-weight: bold;
+      .height(50px);
+    }
+
+    .card-item {
+      margin-bottom: 20px;
+
+      &:last-child {
+        .m-input {
+          width: 128px;
+          margin-right: 8px;
+        }
+      }
+
+      label {
+        display: inline-block;
+        width: 80px;
+        margin-right: 8px;
+      }
+
+      .ivu-select,
+      .m-input {
+        display: inline-block;
+        width: 240px;
+      }
+    }
+
+    .vaildate {
+      width: 100px;
+      .height(32px);
+      vertical-align: middle;
+
+      .ivu-btn {
+        padding: 5px 0;
+      }
+
+      .time {
+        top: 1px;
+      }
+    }
+
+    .card-tip {
+      margin: 4px 0 -10px 93px;
+      .font(12px, #F22D00);
+    }
+  }
+
+  .balance-bottom {
+    float: right;
+    padding-top: 30px;
+    text-align: right;
+    color: @theme-black;
+
+    .ivu-checkbox-wrapper {
+      margin-bottom: 20px;
+      .font();
+    }
+
+    .ivu-checkbox-disabled {
+      .ivu-checkbox-inner {
+        .b-color(@primary-color);
+      }
+
+      &.ivu-checkbox-checked .ivu-checkbox-inner:after {
+        border-color: #fff;
+      }
+    } 
+
+    .bottom-text {
+      width: 350px;
+      min-height: 123px;
+      line-height: 16px;
+      margin-bottom: 10px;
+      padding: 15px 20px;
+      vertical-align: middle;
+      border: 5px solid #FFF2F0;
+      font-size: 12px;
+      box-shadow: 0 0 0 1px #F22D00;
+
+      p {
+        margin-bottom: 4px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .price-text {
+        margin-top: 15px;
+      }
+    }
+
+    .little-price {
+      font-size: 12px;
+    }
+
+    .big-price {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .ivu-btn-error {
+      .size(150px, 44px);
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .workorder-balance {
+    .first-table {
+      img {
+        margin-right: 8px;
+      }
+
+      td {
+        &:first-child {
+          max-width: 450px;
+        }
+      }
+    }
+  }
+}

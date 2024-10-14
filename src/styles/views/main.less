@@ -1,0 +1,126 @@
+@import './../constant.less';
+.layout{
+  height: 100%;
+  display: flex;
+  .mask {
+    position: fixed;
+    top: 0;
+    background: #000;
+    opacity: 0.7;
+    z-index: 9999;
+    .size(100%);
+  }
+
+  aside{
+    position: relative;
+    transition: all linear 0.1s;
+    min-width: 100px;
+    width: 100px;
+    background: white;
+    .logo{
+      font-size: 0;
+      transition: all linear 0.1s;
+      padding: 0 20px;
+      .height(@header-height);
+
+      img{
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        background: transparent;
+      }
+    }
+    
+    &.icon-menu{
+      .logo{
+        padding: 0 10px;
+      }
+      min-width: 60px;
+      width: 60px;
+
+      .side-nav .nav-item{
+        padding: 0;
+        .height(50px);
+      }
+
+      .item-title {
+        padding: 0;
+      }
+    }
+  }
+
+  .page{
+    position: relative;
+    flex-grow: 1;
+
+    >section{
+      overflow: auto;
+      .add-page{
+        padding-bottom: 60px;
+      }
+    }
+    .toggle-pad {
+      padding-left: 120px;
+      .bottom-submit{
+        padding-left: 118px;
+      }
+    }
+  }
+
+  .other-link {
+    position: fixed;
+    right: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25);
+    a {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    a:last-child {
+      border-bottom: none;
+    }
+
+    a img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .advertising {
+    width: 500px;
+    height: 380px;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 20;
+    background: #CCCCCC;
+    
+    img {
+      width:100%;
+      height:100%;
+      border-radius:5px;
+    }
+    .dele {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 22px;
+      height: 22px;
+      border-radius:50%;
+       background: rgba(245, 238, 238, .5);
+       color: #fff;
+       text-align: center;
+       line-height: 22px;
+       cursor:pointer;
+    }
+  }
+}
+.healthAlertBox{
+  .ivu-alert-icon{
+    top:33px;
+  }
+}

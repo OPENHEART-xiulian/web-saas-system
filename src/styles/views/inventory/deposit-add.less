@@ -1,0 +1,147 @@
+@import './../../constant.less';
+
+.deposit-add{
+  .header{
+    position: relative;
+    height: 60px;
+    border-radius: 3px;
+    background-color: #fcfbfa;
+    .ivu-steps{
+      width: 500px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      .ivu-steps-item{
+        width: 40%!important;
+        &:last-child{
+          width: auto!important;
+        }
+        .ivu-steps-head,.ivu-steps-main .ivu-steps-title{
+          background: #fcfbfa;
+        }
+        .ivu-steps-main .ivu-steps-title{
+          margin-top: 2px;
+        }
+      }
+    }
+    &.dropdown {
+      >span {
+        font-size: 14px;
+        color: #666;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      height: auto;
+      padding: 10px 20px;
+      .ivu-dropdown-item {
+        font-size: 14px!important;
+      }
+    }
+    
+
+    &.dropdown .ivu-dropdown{
+      display: inline-block;
+      width: 200px;
+      a {
+        font-size: 14px;
+        color: #332E29;
+        font-weight: bold;
+      }
+      a .ivu-icon {
+        margin-left: 5px;
+      }
+    }
+
+    .ivu-btn {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+    }
+  }
+  .bottom-submit{
+    .slot{
+      >span{
+        margin-right: 40px;
+        vertical-align: middle;
+        .font();
+      }
+    }
+  }
+}
+
+.add-step-1{
+  .title{
+    background-color: #fcfbfa;
+    padding: 0 20px;
+    .height(50px);
+    .font();
+  }
+  .select-table{
+    background: #fff;
+    padding: 20px 20px 40px;
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      tr{
+        height: 50px;
+      }
+      thead tr{
+        box-shadow: inset 0px -1px 0px 0px rgba(229, 226, 223, 0.5);
+        th{
+          .font();
+        }
+      }
+      tbody tr{
+        &:nth-child(even){
+          background: #FCFBFA;
+        }
+        td{
+          padding-left: 20px;
+          .font(14px, #807D7C);
+        }
+      }
+      tbody{
+        box-shadow: inset 0px -1px 0px 0px rgba(229, 226, 223, 0.5);
+      }
+    }
+  }
+  .other-msg{
+    margin-top: 20px;
+    background: #fff;
+    .content{
+      padding: 20px;
+    }
+  }
+}
+
+.add-step-2{
+  background: #fff;
+  padding: 25px 0 50px;
+  text-align: center;
+  .icon{
+    color: #4DCB73;
+    .iconfont{
+      font-size: 100px;
+    }
+  }
+  .title{
+    .height(20px);
+    .font();
+  }
+
+  .tip{
+    margin-bottom: 30px;
+    .height(17px);
+    .font(12px, rgba(128, 125, 124, 1));
+  }
+  .btn-con{
+    .ivu-btn{
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

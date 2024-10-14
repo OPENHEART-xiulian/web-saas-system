@@ -1,0 +1,112 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.stepPosition {
+  position: absolute;
+  left: -49%;
+  width: 100%;
+  top: 30px;
+  padding-left: 0;
+  transform: translateX(6%);
+  text-align: center;
+}
+.bindingCard_body {
+  background: #fff;
+}
+.bindingCard_body .steps {
+  background: #fcfbfa;
+  height: 120px;
+  overflow: hidden;
+}
+.bindingCard_body .steps .ivu-steps {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 37px;
+  transform: translateX(-29%);
+  margin-left: 50%;
+}
+.bindingCard_body .steps .ivu-steps .ivu-steps-main {
+  position: absolute;
+  margin-left: -34px;
+  width: 100%;
+}
+.bindingCard_body .steps .ivu-steps .ivu-steps-item.ivu-steps-status-finish .ivu-steps-content {
+  position: absolute;
+  left: -49%;
+  width: 100%;
+  top: 30px;
+  padding-left: 0;
+  transform: translateX(6%);
+  text-align: center;
+}
+.bindingCard_body .steps .ivu-steps .ivu-steps-item.ivu-steps-status-process .ivu-steps-content {
+  position: absolute;
+  left: -49%;
+  width: 100%;
+  top: 30px;
+  padding-left: 0;
+  transform: translateX(6%);
+  text-align: center;
+}
+.bindingCard_body .steps .ivu-steps .ivu-steps-item.ivu-steps-status-wait .ivu-steps-content {
+  position: absolute;
+  left: -49%;
+  width: 100%;
+  top: 30px;
+  padding-left: 0;
+  transform: translateX(6%);
+  text-align: center;
+}
+.bindingCard_body .bindingCard_steps {
+  padding: 20px;
+}
+.bindingCard .ivu-steps .ivu-steps-head {
+  background: none;
+}
+.firstStep .form .form_input {
+  width: 300px;
+  display: inline-block;
+}
+.firstStep .form .rightTips {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.firstStep .ivu-btn {
+  width: 140px;
+}
+.secondStep {
+  text-align: center;
+}
+.secondStep .ivu-btn {
+  width: 300px;
+}
+.secondStep .primaryColor {
+  color: #FF8000;
+}
+.secondStep .content {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #666;
+}
+.secondStep .content .noVertification {
+  color: #BFBDBA;
+}
+.secondStep .ivu-steps .ivu-steps-tail {
+  left: 16px;
+}
+.secondStep .form_input {
+  width: 300px;
+  margin: 20px auto;
+  margin-top: 40px;
+}

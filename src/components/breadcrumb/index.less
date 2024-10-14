@@ -1,0 +1,115 @@
+@import '../../styles/constant.less';
+
+.saas-bread {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  height         : 66px;
+
+  // 面包屑标题
+  &__title {
+    font-size  : 16px;
+    font-weight: bold;
+    color      : @theme-black;
+  }
+
+  &__slots {
+    flex-grow: 1;
+  }
+
+  .iconfont.tip {
+    display    : inline-block;
+    font-size  : 20px;
+    color      : #ff8000;
+    cursor     : pointer;
+    margin-left: 8px;
+    transform  : translateY(-0.4px);
+  }
+
+  &__action {
+    // flex-grow : 1;
+    // text-align: right;
+
+    .ivu-btn {
+      margin-left : 10px;
+      font-size   : 14px;
+      min-width   : 60px;
+      height      : 32px;
+      line-height : 30px;
+      text-align  : center;
+      padding     : 0 12px;
+      border-color: transparent;
+
+      // 图标
+      .iconfont {
+        display  : inline-block;
+        font-size: 16px;
+        position : relative;
+        top      : 1px;
+
+        &.left-icon {
+          margin-right: 4px;
+        }
+
+        &.right-icon {
+          margin-left: 4px;
+        }
+
+        &.icon-xinzeng,
+        &.icon-yun {
+          top: 1px;
+        }
+      }
+
+      span {
+        display    : inline-block;
+        line-height: 1;
+      }
+
+      &.saas-btn {
+        i {
+          position: relative;
+          top     : -2px;
+        }
+      }
+    }
+
+    // 默认按钮
+    .ivu-btn-default {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+      i {
+        margin-left: 6px;
+        font-size  : 14px;
+        color      : #BFBDBA;
+      }
+
+      &:hover {
+        border-color: #f93;
+
+        i {
+          color: #f93;
+        }
+      }
+    }
+
+    .ivu-btn-error {
+      box-shadow: 0 2px 4px 0 rgba(242, 45, 0, 0.5);
+    }
+  }
+
+  // .f-right {
+  //   float: right;
+
+  //   .ivu-btn-error {
+  //     .iconfont {
+  //       margin-right  : 8px;
+  //       vertical-align: middle;
+  //     }
+  //   }
+
+  //   .ivu-btn-primary {
+  //     box-shadow: 0 2px 4px 0 rgba(255, 128, 0, 0.3);
+  //   }
+  // }
+}

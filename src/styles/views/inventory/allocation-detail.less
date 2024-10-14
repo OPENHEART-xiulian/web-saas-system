@@ -1,0 +1,61 @@
+@import './../../constant.less';
+
+.allocation-detail {
+  .allocation-content {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+  }
+
+  .content-top {
+    margin-bottom: 20px;
+    width:50%;
+    li {
+      margin-bottom: 6px;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .w-table {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .bottom {
+    position: relative;
+    margin-top: 20px;
+    height: 120px;
+
+    .right{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 118px;
+      min-width: 298px;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0 0 0 1px rgba(242, 45, 0, 1);
+      border: 5px solid rgba(255, 242, 240, 1);
+      padding: 24px;
+
+      p {
+        text-align: right;
+        .height(22px);
+        .font();
+
+        span{
+          margin-left: 5px;
+          vertical-align: middle;
+          .font(18px, rgba(242, 45, 0, 1));
+        }
+
+        &:last-child {
+          .font(12px, #999);
+        }
+      }
+    }
+  }
+}

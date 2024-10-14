@@ -1,0 +1,119 @@
+@import './../constant.less';
+
+.search-form{
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+  .ivu-input-icon+.ivu-input{
+    padding-right: 10px;
+  }
+  .form-box{
+    display: flex;
+    flex-wrap: wrap!important;
+  }
+
+  .form-item{
+    flex-grow: unset!important;
+    padding-right: 20px;
+    width: 25%;
+
+    &:nth-child(4n) {
+      padding-right: 0;
+    }
+
+    .ivu-form-item {
+      margin-bottom: 8px;
+    }
+    .ivu-btn{
+      min-width: 90px;
+    }
+
+    .ivu-input{
+      padding-left: 10px;
+    }
+    .ivu-form-item-label {
+      line-height: initial;
+      padding: 0;
+      .font(14px, @theme-black);
+    }
+
+    .ivu-date-picker {
+      display: inline;
+    }
+
+    .ivu-form-item-content {
+      margin-top: 6px;
+    }
+
+    .ivu-radio-wrapper{
+      margin-right: 20px;
+      color: @theme-black;
+    }
+
+    .ivu-input-group-append {
+      width: 60px;
+      background: #E5E2DF;
+      border-radius: 3px;
+      border-color: #E5E2DF;
+      .font(14px, @theme-black);
+    }
+
+    .form-number {
+      display: flex;
+    }
+
+    .number-item {
+      display: flex;
+      width: 50%;
+      flex-grow: 1;
+      font-size: 0;
+
+      .ivu-input-group-append {
+        width: auto;
+        min-width: 40px; 
+        height: 36px;
+        background: #F7F4F2;
+        border: 1px solid #E5E2DF;
+        border-left: 0;
+        text-align: center;
+        vertical-align: middle;
+        .font();
+      }
+
+      .ivu-input {
+        flex-grow: 1;
+        height: 36px;
+      }
+    }
+
+    .multiple-date {
+      display: flex;
+      &__item {
+        width: 50%;
+        flex-grow: 1;
+      }
+    }
+
+    .doubleText{
+      display: flex;
+      align-items: center;
+      .splitSympol{
+        margin:0 10px;
+      }
+    }
+  }
+  
+  .form-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 20px;
+    padding-right: 0;
+    border-top: 1px solid #f7f4f2;
+    text-align: right;
+
+    .ivu-btn-default {
+      margin-right: 8px;
+    }
+  }
+}

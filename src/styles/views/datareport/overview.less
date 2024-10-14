@@ -1,0 +1,69 @@
+@import './../../constant.less';
+
+.overview-wrap {
+  .overview-content {
+    background: white;
+    padding: 20px 20px 100px;
+    &__title {
+      font-weight:500;
+      text-align: left;
+      font-size: 18px;
+      color: #332E29;
+      font-weight: normal;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #E5E2DF;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 28px 22px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgba(102,102,102,0.1);
+
+    .iconfont {
+      margin-right: 12px;
+      padding: 14px;
+      border-radius: 50%;
+      vertical-align: middle;
+      .font(22px, #fff);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    span {
+      line-height: 22px;
+      font-weight: bold;
+      vertical-align: sub;
+      .font(16px, #332E29);
+    }
+  }
+
+  .ivu-col {
+    &:nth-child(4n) .item {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .overview-wrap {
+    .item {
+      padding: 28px 14px;
+
+      .iconfont {
+        margin-right: 8px;
+      }
+    }
+  }
+}

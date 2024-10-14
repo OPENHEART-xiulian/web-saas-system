@@ -1,0 +1,207 @@
+@import '../../constant.less';
+
+.workorder-table-item {
+  margin-bottom: 10px;
+  // padding: 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+
+  .plate-no {
+    display: inline-block;
+    margin-right: 26px;
+    padding: 4px 8px;
+    background: #336EE3;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #336EE3;
+    border-radius: 2px;
+    vertical-align: middle;
+    .font(14px, #fff);
+
+    &.none {
+      background: #E5E2DF;
+      box-shadow: 0 0 0 1px #fff, 0 0 0 2px #E5E2DF;
+      color: @theme-black;
+    }
+  }
+
+  img {
+    margin-right: 10px;
+    vertical-align: middle;
+    min-width: 33px;
+    height: 33px;
+  }
+
+  .img-block {
+    display: inline-block;
+    width: 50%;
+    white-space: normal;
+    word-wrap: break-word;
+    vertical-align: middle;
+    .font();
+  }
+
+  .td-detail {
+    position: relative;
+    padding: 12px 20px;
+    background: #FCFBFA;
+    .font(12px, #807D7C);
+
+    .text {
+      display: inline-block;
+
+      span {
+        margin-left: 6px;
+        padding-left: 10px;
+        border-left: 1px solid #807D7C;
+  
+        &:first-child {
+          margin-left: 0;
+          padding-left: 0;
+          border-left: 0;
+        }
+      }
+    }
+
+    .edit-time {
+      display: inline-block;
+      margin-left: 6px;
+
+      .time-text {
+        margin-left: 6px;
+        padding-left: 10px;
+        border-left: 1px solid #807D7C;
+      }
+
+      .ivu-date-picker {
+        margin-right: 8px;
+      }
+
+      .ivu-input {
+        height: 32px;
+        font-size: 12px;
+      }
+
+      .ivu-input-icon {
+        // width: 26px;
+        .height(32px);
+      }
+
+      .ivu-btn {
+        height: 32px;
+        margin-left: 2px;
+        padding: 2px 10px;
+        font-size: 12px;
+      }
+    }
+
+    .icon-bianji1 {
+      margin-left: 10px;
+      padding: 6px;
+      cursor: pointer;
+      .font(12px, @primary-color);
+    }
+
+    .pos-right {
+      position: absolute;
+      right: 20px;
+      top: 8px;
+    }
+
+    .ivu-tag {
+      .height(auto, 1.5);
+      margin: 0;
+      padding: 4px 10px;
+      background-color: #FDEFE0;
+      border: none;
+      vertical-align: middle;
+
+      .ivu-tag-text{
+        .font(12px, @primary-color);
+      }
+    }
+
+    .advance {
+      display: inline-block;
+      .height(auto, 1.5);
+      margin-left: 8px;
+      padding: 4px 10px;
+      color: @primary-color;
+      background: #FDEFE0;
+      vertical-align: middle;
+    }
+  }
+
+  .first-table {
+    width: 100%;
+    padding: 16px 20px;
+    // border-bottom: 1px solid #F7F4F2;
+
+    td {
+      .font();
+
+      &:first-child {
+        white-space: nowrap;
+      }
+    }
+
+    .last-td {
+      width: 140px;
+      text-align: right;
+      // color: @primary-color;
+      // vertical-align: bottom;
+      
+      div {
+        cursor: pointer;
+      }
+    }
+
+    .price {
+      color: #F22D00;
+    }
+  }
+
+  .table-detail { // 配件销售的第二个表格
+    table-layout: fixed;
+    margin-bottom: -1px;
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid rgb(247, 244, 242, 1);
+    th, td {
+      height: 50px;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-right: 1px solid rgb(247, 244, 242, 1);
+      border-bottom: 1px solid rgb(247, 244, 242, 1);
+      word-break: break-all;
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    th {
+      background-color: #fcfbfa;
+      color: #332e29;
+      text-align: left;
+    }
+    
+    tr:last-child td{
+      border-bottom: none;
+    }
+  }
+
+  .opt-btn {
+    margin: 0 20px;
+    padding: 10px 0;
+    text-align: right;
+    border-top: 1px solid #F7F4F2;
+
+    .ivu-btn {
+      height: 34px;
+      margin-left: 8px;
+    }
+
+    .ivu-dropdown-menu li{
+      text-align: center;
+      font-size: 14px!important;
+    }
+  }
+}

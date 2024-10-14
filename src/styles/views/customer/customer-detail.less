@@ -1,0 +1,321 @@
+@import './../../constant.less';
+
+.customer-detail {
+  .box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .box-item {
+      position: relative;
+      width: 32.5%;
+      background: #fff;
+      text-align: center;
+      box-shadow: @box-shadow;
+      .font();
+    }
+
+    .title {
+      margin: 20px 0;
+    }
+
+    .detail-top {
+      padding: 25px 0;
+      background: #FCFBFA;
+      .font();
+
+      img {
+        margin-bottom: 4px;
+        .size(70px);
+      }
+    }
+
+    .detail-info {
+      margin-top: 2px;
+      .font(12px, #807D7C);
+
+      span {
+        margin-right: 6px;
+        padding-right: 8px;
+        border-right: 1px solid #807D7C;
+
+        &:last-child {
+          margin-right: 0;
+          padding-right: 0;
+          border-right: 0;
+        }
+      }
+    }
+
+    .detail-center {
+      margin: 0 20px;
+      padding-bottom: 12px;
+      text-align: left;
+      border-bottom: 1px solid #E5E2DF;
+
+      p {
+        margin-top: 12px;
+        .font(14px, #807D7C);
+      }
+
+      i {
+        margin-right: 10px;
+        .font(14px, #BFBDBA);
+      }
+
+      .tag-box {
+        margin-top: 18px;
+
+        .ivu-tag {
+          .height(28px);
+          margin: 0 8px 8px 0;
+          padding: 0 10px;
+          border-radius: 2px;
+        }
+
+        .ivu-tag-text {
+          font-size: 12px;
+          color: @primary-color !important;
+        }
+
+        .ivu-btn-default {
+          .height(28px);
+          width: 70px;
+          padding: 0;
+          border-color: @primary-color;
+          border-radius: 2px;
+          .font(12px, @primary-color);
+        }
+
+        .ivu-poptip {
+          margin-bottom: 8px;
+          vertical-align: middle;
+        }
+
+        .tag-bottom {
+          padding: 8px 0 0;
+          border-top: 1px solid #E5E2DF;
+
+          .ivu-btn {
+            font-size: 12px;
+          }
+
+          .right-btn {
+            float: right;
+
+            .ivu-btn {
+              .size(44px, 28px);
+              padding: 0;
+              border-radius: 2px;
+            }
+
+            .ivu-btn-default {
+              margin-left: 8px;
+              border-color: #E5E0DA;
+              color: @theme-black;
+            }
+          }
+        }
+
+        .add-tag {
+          display: inline-block;
+          .size(28px);
+          line-height: 28px;
+          margin-bottom: 8px;
+          background: @primary-color;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          .font(16px, #fff);
+        }
+
+        .ivu-poptip-body-content {
+          overflow: hidden;
+          white-space: normal;
+
+          .ivu-tag {
+            margin-bottom: 8px;
+            background: #fff;
+            border: 1px solid #ddd;
+            
+            .ivu-tag-text {
+              color: @theme-black !important;
+            }
+          }
+
+          .check-tag {
+            background: #FDEFE0;
+            border: 1px solid #FDEFE0;
+
+            .ivu-tag-text {
+              color: @primary-color !important;
+            }
+          }
+        }
+
+        .tag-input {
+          display: inline-block;
+          margin-bottom: 8px;
+          vertical-align: middle;
+          border: none;
+          padding-left: 0;
+
+          .ivu-input-wrapper,
+          .ivu-input {
+            .size(90px, 30px);
+            border-radius: 2px;
+          }
+
+          .iconfont {
+            display: inline-block;
+            .size(28px);
+            line-height: 28px;
+            margin-right: 0;
+            margin-left: 6px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+
+          .icon-dagou {
+            background: @primary-color;
+            .font(16px, #fff);
+          }
+
+          .icon-guanbi {
+            background: #F7F4F2;
+            .font(16px, #BFBDBA);
+          }
+        }
+      }
+    }
+
+    .detail-bottom {
+      padding: 12px 20px;
+      text-align: right;
+
+      .iconfont {
+        display: inline-block;
+        .size(26px);
+        line-height: 26px;
+        margin-left: 8px;
+        background: #F7F4F2;
+        border-radius: 1px;
+        text-align: center;
+        cursor: pointer;
+        .font();
+      }
+
+      .ivu-poptip-popper {
+        min-width: 250px;
+        text-align: left;
+
+        .ivu-btn {
+          height: 26px;
+          padding: 0 5px;
+          font-size: 12px;
+        }
+
+        .ivu-icon {
+          left: 16px;
+          font-size: 16px;
+  
+          &::before {
+            content: "\F35B";
+          }
+        }
+      }
+    }
+
+    .echarts {
+      .size(190px);
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .chart-detail {
+      margin-top: 2px;
+
+      p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px 20px;
+        border-bottom: 1px solid #E5E2DF;
+        .font(14px, #807D7C);
+
+        &:last-child {
+          border-bottom: 0;
+
+          i {
+            background: #FBDB66;
+          }
+        }
+        
+        &:nth-child(2) {
+          i {
+            background: #F2667D;
+          }
+        }
+      }
+
+      i {
+        display: inline-block;
+        .size(16px);
+        margin-right: 15px;
+        border-radius: 2px;
+        background: #41A2FF;
+        vertical-align: middle;
+      }
+    }
+
+    .box-item-3 {
+      img {
+        margin-bottom: 20px;
+      }
+
+      p {
+        &:last-child {
+          margin-top: 10px;
+          .font(12px, #BFBDBA);
+        }
+      }
+    }
+  }
+
+  .no-vehicle {
+    position: relative;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+    box-shadow: @box-shadow;
+    .font();
+
+    i {
+      display: block;
+      margin-bottom: 5px;
+      .font(80px, #BFBDBA);
+    }
+
+    .ivu-btn {
+      .size(120px, 34px);
+      margin-top: 20px;
+      border-radius: 2px;
+      box-shadow: none;
+    }
+  }
+
+  .bottom {
+    position: relative;
+  }
+
+  .add-btn {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    .size(100px, 34px);
+    box-shadow: none;
+    border-radius: 2px;
+  }
+}

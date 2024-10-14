@@ -1,0 +1,98 @@
+@import '../../styles/constant.less';
+
+.saas-table {
+  position  : relative;
+  padding   : 20px;
+  background: #fff;
+  box-shadow: @box-shadow;
+
+  .ivu-table-wrapper>.ivu-spin-fix {
+    border: none;
+  }
+
+  .ivu-table-wrapper {
+    border: 0;
+    overflow: unset;
+  }
+
+  .ivu-table {
+    // 偶数行
+    tr:nth-child(2n) td {
+      background-color: #FCFBFA !important;
+    }
+
+    // 表头
+    th {
+      background-color: #fcfbfa;
+      border-bottom   : 1px solid #E5E2DF;
+      font-weight     : normal;
+      font-size       : 14px;
+      color           : @theme-black;
+      height: 50px;
+      font-size: 14px;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      text-align: left;
+      color: #332e29;
+
+      .ivu-table-sort,
+      .ivu-table-filter {
+        margin-left: 0;
+        i {
+          color: #BFBDBA;
+        }
+        .on {
+          color: @primary-color;
+        }
+      }
+    }
+
+    td {
+      padding:2px 0;
+      border-bottom: 1px solid #F7F4F2;
+      font-size    : 14px;
+      color        : #807D7C;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .ivu-table-row {
+      &.ivu-table-row-hover td {
+        background-color: #FFF9F2 !important;
+      }
+    }
+
+    .ivu-table-cell {
+      overflow     : unset;
+      text-overflow: initial;
+      padding-left : 10px;
+      padding-right: 10px;
+    }
+    
+    // 去掉iview表格固定列的阴影
+    .ivu-table-fixed,
+    .ivu-table-fixed-right {
+      box-shadow: none;
+      &::before {
+        display: none;
+      }
+    }
+
+    // 暂无数据
+    .ivu-table-tip {
+      td {
+        width: 100% !important;
+      }
+    }
+  }
+
+  // 分页
+  &__pagination {
+    margin-top     : 20px;
+    display        : flex;
+    justify-content: space-between;
+  }
+}

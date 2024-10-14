@@ -1,0 +1,74 @@
+@import '../constant.less';
+
+.w-tree{
+  position: relative;
+  padding-left: 50px;
+  .w-tree-item{
+    >.input-con{
+      position: relative;
+      padding-bottom: 10px;
+      display: flex;
+      >.ivu-icon{
+        display: block;
+        position: absolute;
+        right: 310px;
+        top: 10px;
+      }
+      >.action-con{
+        line-height: 36px;
+        text-align: right;
+        width: 300px;
+        min-width: 300px;
+        .ivu-btn:first-child{
+          position: relative;
+          padding-right: 10px;
+          &::after{
+            content: '';
+            position: absolute;
+            top: 4px;
+            right: 1px;
+            background: #e0e0e0;
+            .size(1px, 13px);
+          }
+        }
+      }
+    }
+    >.iconfont{
+      transition: all 0.1s linear;
+      transform: rotate(-90deg);
+      display: inline-block;
+      cursor: pointer;
+      .pos(absolute, 0, 5px);
+
+      &.open{
+        transform: rotate(-0deg);
+      }
+      &:hover{
+        color: #333;
+      }
+    }
+  }
+  
+  &::before{
+    content: '';
+    background: #ddd;
+    .pos(absolute, 25px, -10px);
+    .size(1px, 100%);
+  }
+  &::after{
+    content: '';
+    background: #ddd;
+    .pos(absolute, 25px, 17px);
+    .size(25px, 1px);
+  }
+  &:last-child::before{
+    height: 27px;
+  }
+
+  &.hide-line{
+    padding-left: 30px;
+    &::before, &::after{
+      display: none;
+    }
+  }
+}

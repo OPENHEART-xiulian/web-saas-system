@@ -1,0 +1,81 @@
+@import './../../constant.less';
+
+.payable-detail {
+  .detail-top {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+
+    .msg {
+      display: inline-block;
+      margin-left: 18px;
+      margin-right: 98px;
+      font-weight: bold;
+      vertical-align: middle;
+      .font(18px, @theme-black);
+
+      p {
+        margin-bottom: 5px;
+
+        &:nth-child(2) {
+          font-weight: normal;
+          font-size: 14px;
+        }
+      }
+
+      .ivu-btn-default {
+        height: 28px;
+        padding: 4px 15px;
+        .font(12px, @theme-black);
+      }
+    }
+
+    ul {
+      display: inline-block;
+      padding-left: 100px;
+      border-left: 1px solid #E5E2DF;
+      vertical-align: middle;
+    }
+  
+    li {
+      display: inline-block;
+      margin-right: 100px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      p {
+        .font(14px, #807D7C);
+    
+        &:nth-child(2) {
+          margin: 3px 0;
+          .font(20px, @theme-black);
+        }
+      }
+    }
+  }
+
+  .detail-text {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    p {
+      line-height: 24px;
+      text-align: left;
+      .font();
+
+      &::nth-child(2) {
+        .font(12px, #807D7C);
+      }
+    }
+
+    .price {
+      .font(16px, #F22D00);
+      font-weight: bold;
+    }
+  }
+}

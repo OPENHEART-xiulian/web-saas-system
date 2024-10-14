@@ -1,0 +1,26 @@
+@import '../../styles/constant.less';
+
+.saas-catetab {
+  &__children {
+    padding   : 0 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    font-size : 14px;
+    color     : #807d7c;
+    .scc-list {
+      padding: 15px 0 7px;
+      &__item {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 8px;
+        &:hover, &.active {
+          color: @primary-color;
+        }
+      }
+      &:last-child {
+        box-shadow: 0 -1px 0 0 #f7f4f2;
+      }
+    }
+  }
+}

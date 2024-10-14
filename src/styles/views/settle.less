@@ -1,0 +1,447 @@
+@import './../constant.less';
+@media screen and (max-width: 1200px) {
+  .page.settle{
+    >header{
+      .container{
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.page.settle{
+  >header{
+    background: #fff;
+    .container{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .logo{
+        width: 139px;
+        img{
+          width: 100%;
+          vertical-align: middle;
+        }
+      }
+      a{
+        color: @primary-color;
+        &:hover{
+          color: @primary-hover-color;
+        }
+      }
+    }
+  }
+
+  >section{
+    background: @bg-color;
+  }
+
+  @formItemH: 40px;
+
+  .ivu-form-item{
+    position: relative;
+    &.code{
+      .ivu-input-wrapper{
+        width: 150px;
+        margin-right: 24px;
+      }
+      .captcha{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 16px;
+        width: 77px;
+        font-size: 14px;
+        cursor: pointer;
+        .height(40px);
+      }
+      i.icon-shuaxin{
+        cursor: pointer;
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+
+    &.submit-btn{
+      height: @formItemH+4;
+      margin-bottom: 0;
+      .ivu-form-item-content{
+        height: 100%;
+      }
+      .ivu-btn{
+        height: 100%;
+        .font(16px, #fff);
+      }
+    }
+    .ivu-input{
+      padding-left: 44px;
+      height: @formItemH;
+      font-size: 14px;
+    }
+    .prepend{
+      color: #A1A5B3;
+      width: 44px;
+      z-index: 1;
+      text-align: center;
+      .pos(absolute, 0, 0);
+      .height(@formItemH)
+    }
+    &.forget-pwd{
+      text-align: center;
+      a{
+        color: @theme-black;
+        cursor: pointer;
+        &:hover{
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* 登录 */
+.login.page.settle{
+  >section{
+    height: 600px;
+    // min-height: 600px;
+    flex-grow: initial;
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+
+    .container{
+      padding: 0 80px 0 90px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .login-bg{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        height: 380px;
+      }
+    }
+    
+    .form-box{
+      width: 380px;
+      background-color: #fff;
+      box-shadow: @box-shadow;
+      padding: 40px 40px 20px;
+
+      h2{
+        margin-bottom: 30px;
+        .height(28px);
+        .font(20px, @theme-black);
+      }
+    }
+  }
+
+  .linkbtn-wrap {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  >footer{
+    padding-top: 36px;
+    height: 128px;
+    flex-grow: 1;
+    background: white;
+  }
+}
+
+.settle.page{
+  &.forget-password, &.register{
+    >section{
+      padding-top: 40px;
+      .container{
+        background-color: #fff;
+        box-shadow: @box-shadow;
+        .header{
+          width: 100%;
+          border-radius: 3px;
+          background-color: #fcfbfa;
+          .height(60px);
+
+          >.title{
+            padding-left: 20px;
+            text-align: left;
+            .font(16px, @theme-black);
+          }
+        }
+
+        .content{
+          // width: 500px;
+          margin: 0 auto;
+          padding: 40px 0 50px; 
+          .ivu-form {
+            width: 500px;
+            margin: 0 auto;
+          }
+          .submit-btn{
+            margin-top: 30px;
+          }
+          .center{
+            text-align: center;
+            span{
+              cursor: pointer;
+              &:hover{
+                color: @primary-hover-color;
+              }
+            }
+          }
+          .veryfi-code{
+            .ivu-input-wrapper{
+              vertical-align: bottom;
+              width: 350px;
+              margin-right: 6px;
+            }
+            .vaildate{
+              vertical-align: bottom;
+            }
+          }
+          .ivu-form-item{
+            margin-bottom: 18px;
+            .ivu-form-item-content .ivu-form-item-error-tip{
+              padding-top: 3px;
+            }
+            .ivu-input{
+              padding-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 注册 */
+.register{
+  >section{
+    .container{
+      .header .ivu-steps{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .size(500px, 100%);
+        
+        .ivu-steps-item{
+          width: 40%!important;
+          &:last-child{
+            width: auto!important;
+          }
+          .ivu-steps-head,.ivu-steps-main .ivu-steps-title{
+            background: #fcfbfa;
+          }
+          .ivu-steps-main .ivu-steps-title{
+            margin-top: 2px;
+          }
+        }
+      }
+
+      .content{
+        .wait{
+          text-align: center;
+          .icon{
+            margin: 10px 0 30px;
+          }
+          .title{
+            margin-bottom: 10px;
+            .height(20px);
+            .font(14px, @theme-black);
+          }
+          .tip{
+            margin-bottom: 30px;
+            .height(17px);
+            .font(12px, #807d7c);
+          }
+          .ivu-btn{
+            color: @theme-black;
+            .size(130px, 36px);
+
+            &:hover{
+              color: @primary-hover-color;
+            }
+          }
+        }
+      }
+
+      .has-token {
+        text-align: center;
+        .icon-con {
+          width: 100px;
+          height: 100px;
+          margin: auto;
+          border-radius: 50%;
+          background: #FFE8D1 ;
+        }
+        .icon-con img {
+          margin-top: 25px;
+          width: 50px;
+          height: 50px;
+        }
+
+        h2 {
+          line-height: 20px;
+          color: #332e29;
+          font-size: 14px;
+          margin-top: 10px;
+        }
+
+        p {
+          line-height: 17px;
+          color: #807d7c;
+          font-size: 12px;
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+// 通知
+.notice {
+  .logo {
+    cursor: pointer;
+  }
+
+  > section {
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  > header {
+    .container {
+      // max-width: inherit;
+      // padding: 0 80px;
+    }
+  }
+
+  .document {
+    .ivu-tooltip-arrow {
+      border-bottom-color: #fff;
+    }
+
+    .ivu-tooltip-inner {
+      background: #fff;
+      color: @theme-black;
+    }
+
+    .ivu-tooltip-rel {
+      color: @theme-black;
+
+      span {
+        cursor: pointer;
+      }
+    }
+  } 
+
+  .opt {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+    color: @theme-black;
+  }
+
+  .item {
+    display: flex;
+    padding: 0 15px;
+    position: relative;
+    cursor: pointer;
+    .icon{
+      margin: 0 10px;
+      .size(30px, 100%);
+
+      img{
+        object-fit: contain;
+        .size(100%);
+        height: auto\0; // ie11
+        height: auto\9; // ie10
+        margin-top: 15px\0;
+        margin-top: 15px\9;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+    
+    .title{
+      flex-grow: 1;
+      font-size: 14px;
+    }
+
+    .user {
+      .font();
+    }
+
+    &:hover{
+      .item-content{
+        display: block;
+      }
+    }
+
+    .item-content{
+      display: none;
+      position: absolute;
+      top: 100%;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px 0px #edebe8;
+      color: @theme-black;
+      .border(#f2f0ed);
+
+      &.contact{
+        left: 50%;
+        padding: 15px 0;
+        text-align: center;
+        width: 200px;
+        transform: translateX(-50%);
+        h2{
+          margin-bottom: 2px;
+          font-weight: normal;
+          font-size: 22px;
+          .height(26px);
+        }
+        p{
+          .height(17px, 14px);
+          .font(12px, 807D7C);
+        }
+        .qr-code{
+          margin-top: 15px;
+          padding: 15px 0;
+          border-top: 1px solid rgba(247, 244, 242, 1);
+          .size(100%, 130px);
+
+          img{
+            .size(100px);
+          }
+        }
+      }
+
+      &.account{
+        right: 12px;
+        width: 150px;
+        padding-top: 10px;
+        .account-item{
+          padding: 0 25px;
+          line-height: 40px;
+          font-size: 14px;
+          i.iconfont{
+            margin-right: 5px;
+            vertical-align: middle;
+            .font(16px, @primary-color);
+          }
+          &:hover{
+            background-color: rgba(250, 244, 240, 1);
+          }
+        }
+      }
+    }
+  }
+}

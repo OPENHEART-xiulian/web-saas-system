@@ -1,0 +1,229 @@
+@import './../../constant.less';
+
+.add-form {
+  .title {
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: #fcfbfa;
+    text-align: left;
+    font-weight: bold;
+    .height(50px);
+    .font();
+  }
+
+  .search-form {
+    &.input-list {
+      padding: 0 20px 20px;
+    }
+
+    .ivu-date-picker {
+      .ivu-btn {
+        height: auto;
+        padding: 2px 7px;
+      }
+    }
+
+    .refund-table {
+      padding-top: 20px;
+      border: 0;
+
+      .ivu-table {
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      th {
+        height: 50px;
+        background: #FCFBFA;
+        border-bottom: 0;
+        font-weight: normal;
+        .font();
+      }
+
+      td {
+        height: 50px;
+        border-bottom-color: #F7F4F2;
+        .font(14px, #807D7C);
+      }
+    }
+  }
+
+  .header {
+    padding: 0 20px;
+    .height(60px);
+
+    .line {
+      display: inline-block;
+      margin: 0 15px;
+      background: #ddd;
+      vertical-align: middle;
+      .size(1px, 16px);
+    }
+
+    span {
+      .font();
+    }
+  }
+
+  .tip-icon {
+    .pos(absolute, 64px, -24px);
+    .font(16px, @primary-color);
+    cursor: pointer;
+  }
+
+  .more-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+
+    >p {
+      margin-right: 5px;
+    }
+
+    >p span {
+      color: #ff8800;
+    }
+
+    .ivu-btn .iconfont {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      bottom: 1px;
+      font-size: 12px;
+    }
+
+    .ivu-btn .iconfont.down {
+      transform: rotate(180deg);
+    }
+  }
+
+
+  // .input.add-client {
+  //   position: relative;
+  //   text-align: center;
+  //   width: 550px;
+  //   margin: auto;
+
+  //   &.sparepart {
+  //     width: 660px;
+  //     .add-btn {
+  //       right: 110px;
+  //     }
+  //   }
+
+  //   .add-btn {
+  //     position: absolute;
+  //     right: 5px;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //   }
+  // }
+
+  .vehicle {
+    .form-box.hide {
+      box-shadow: inset 0px 1px 0px 0px rgba(247, 244, 242, 1);
+      padding-top: 20px;
+    }
+
+    .form-box.width-20 {
+      .form-item {
+        width: 20%;
+        &:nth-child(4) {
+          padding-right: 20px;
+        }
+        &:nth-child(5) {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .drop-btn-wrap {
+      position: relative;
+      .drop-btn {
+        position: unset!important;
+        margin: 0 auto 10px;
+      }
+    }
+    // .drop-btn{
+    // .ivu-form-item-content {
+      // text-align: right;
+      .drop-btn {
+        position: absolute;
+        right: 0;
+        top: 46px;
+
+        &.open {
+          top: 60px;
+        }
+
+        i {
+          margin-left: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 12px;
+          transition: 0.1s all linear;
+
+          &.drop {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    // }
+
+    // }
+  }
+
+  .bottom-submit {
+    .slot {
+      .slot-left {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        margin-right: 50px;
+
+        .workorder-price {
+          margin-bottom: 6px;
+
+          span {
+            text-align: right;
+            .font(20px, rgba(242, 45, 0, 1));
+          }
+        }
+
+        p {
+          line-height: 16px;
+          .font(12px, @theme-black);
+
+          span {
+            position: relative;
+            text-align: right;
+            padding: 0 10px;
+
+            &:last-child {
+              padding-right: 0px;
+
+              &::after {
+                display: none;
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 2px;
+              display: inline-block;
+              background: #ddd;
+              .size(1px, 10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

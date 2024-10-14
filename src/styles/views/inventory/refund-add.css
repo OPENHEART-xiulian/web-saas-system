@@ -1,0 +1,134 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.refund-add {
+  padding-bottom: 80px;
+}
+.refund-add.warehouseRefund .refundFormBox {
+  display: flex;
+}
+.refund-add.warehouseRefund .refundFormBox .refund-form {
+  width: 50%;
+}
+.refund-add .box-shadow {
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(51, 46, 41, 0.05);
+  background: white;
+  border-radius: 3px;
+}
+.refund-add .refund-form {
+  padding: 20px;
+}
+.refund-add .form-item span {
+  font-size: 14px;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 100px;
+}
+.refund-add .item-value {
+  color: #332E29;
+}
+.refund-add .form-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.refund-add .form-box .ivu-form-item {
+  width: 23.5%;
+  margin-right: 2%;
+}
+.refund-add .form-box .ivu-form-item-label {
+  color: #332E29;
+}
+.refund-add .form-box .ivu-form-item:nth-child(4) {
+  margin-right: 0;
+}
+.refund-add .form-box .ivu-date-picker {
+  width: 100%;
+}
+.refund-add .form-box .add-btn {
+  position: absolute;
+  right: 0;
+  top: -32px;
+  color: #FF8800;
+  cursor: pointer;
+}
+.refund-add .title {
+  padding-left: 20px;
+  border-radius: 3px;
+  background-color: #fcfbfa;
+  text-align: left;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #332E29;
+}
+.refund-add .part-list {
+  padding: 0 20px 20px;
+}
+.refund-add .bottom-submit {
+  line-height: normal;
+}
+.refund-add .bottom-submit p {
+  color: #332E29;
+}
+.refund-add .bottom-submit .price span {
+  font-size: 20px;
+  color: #f22d00;
+}
+.refund-add .bottom-submit .slot {
+  padding: 20px 0;
+}
+.refund-add .bottom-submit .slot-left {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.refund-add .add-supplier .ivu-btn {
+  position: absolute;
+  right: 0;
+  top: -28px;
+}
+.refund-add .remark {
+  position: relative;
+  text-align: right;
+  padding: 20px;
+}
+.refund-add .remark .right {
+  text-align: left;
+  display: inline-block;
+  margin-right: 0;
+  width: 298px;
+  padding: 30px 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #f22d00;
+  border: 5px solid #fff2f0;
+  padding: 24px;
+}
+.refund-add .remark .right p {
+  text-align: right;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #332E29;
+}
+.refund-add .remark .right p span {
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #f22d00;
+}
+.refund-add .remark .right .small {
+  font-size: 12px;
+  color: #666;
+}

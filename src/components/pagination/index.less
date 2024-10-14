@@ -1,0 +1,44 @@
+@import '../../styles/constant.less';
+
+.saas-pagination {
+  width      : auto;
+  display    : flex;
+  align-items: center;
+
+  .ivu-page-prev,
+  .ivu-page-next,
+  .ivu-page-item-jump-prev,
+  .ivu-page-item-jump-next,
+  .ivu-page-item {
+    width      : 32px;
+    min-width  : 32px;
+    height     : 32px;
+    line-height: 32px;
+    .font(14px, #807D7C);
+  }
+
+  .ivu-page-options {
+    margin-left: 10px;
+
+    .ivu-page-options-sizer {
+      margin-right: 0;
+    }
+  }
+
+  .ivu-select {
+    .ivu-select-selection {
+      height       : 32px;
+      line-height  : 32px;
+      padding      : 0 8px 0 4px;
+      border-radius: 3px;
+      border-color : #E5E0DA;
+
+      .ivu-select-placeholder,
+      .ivu-select-selected-value {
+        line-height: 32px;
+        height     : 32px;
+        .font(14px, #807D7C);
+      }
+    }
+  }
+}

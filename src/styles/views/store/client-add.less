@@ -1,0 +1,79 @@
+@import './../../constant.less';
+
+.client-add{
+  .title{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 20px;
+    background-color: rgba(252, 251, 250, 1);
+    text-align: left;
+    font-weight: normal;
+    .height(50px);
+    .font();
+    .add-btn {
+      float: right;
+      margin-top: 8px;
+    }
+  }
+  .input-list-container{
+    padding: 0 18px;
+    background: white;
+  }
+  .input-list-table{
+    .row{
+      &:nth-child(2n){
+        background-color: rgba(252, 251, 250, 1);
+      }
+    }
+    .row .col{
+      text-align: left;
+      padding-right: 0;
+      padding-left: 18px;
+      
+      // padding-right: 0\0; // ie11
+      // padding-right: 0\9; // ie10
+      
+      .plate-no{
+        line-height: 36px;
+        .select-input{
+          width: 50px;
+          min-width: 50px;
+        }
+        .ivu-input-type {
+          // min-width: 80px;
+        }
+      }
+
+      &.model-brand{
+        >.ivu-select{
+          display: inline-block;
+          &:first-child{
+            width: 100px;
+            margin-right: 10px;
+          }
+          &:last-child{
+            width: 166px;
+          }
+        }
+      }
+    }
+    .tfooter{
+      td{
+        padding: 15px 0 20px;
+      }
+    }
+    .add-vehicle{
+      background-color: rgba(252, 251, 250, 1);
+      text-align: center;
+      .height(52px);
+      .font(14px, rgba(255, 128, 0, 1));
+
+      span{
+        cursor: pointer;
+        padding: 0 20px;
+        display:inline-block;
+        line-height: inherit;
+      }
+    }
+  }
+}

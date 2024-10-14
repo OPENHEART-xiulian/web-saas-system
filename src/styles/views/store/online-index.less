@@ -1,0 +1,150 @@
+@import './../../constant.less';
+.online{
+  &_body{
+    padding-bottom:100px;
+
+    &_step{
+      background: #fff;
+      padding:20px;
+      .stepBox{
+        background: #fcfbfa;
+        overflow: hidden;
+        .steps{
+          background:none;
+          height: 120px;
+          padding-top: 7px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+          margin: 0 auto;
+  
+          .ivu-steps{
+            .ivu-steps-title{
+              padding-top:4px;
+              background: #fcfbfa;
+            }
+          }
+    
+        }
+      }
+    }
+
+    .w-form{
+      padding-top:0px;
+    }
+    .form-title{
+      line-height: 50px;
+      padding: 0 20px;
+      background: #fafafa;
+      margin-bottom: 20px;
+    }
+    textarea{
+      border-radius: 3px;
+      border-color: #E5E2DF;
+      font-size: 14px;
+      color: #332E29;
+      width: 600px;
+      line-height: 1.5;
+      padding: 4px 7px;
+      height: 130px;
+      &:focus {
+        border-color: #ff9933;
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 2px rgba(255, 128, 0, 0.2);
+        box-shadow: 0 0 0 2px rgba(255, 128, 0, 0.2);
+      }
+    }
+    .tip{
+      font-size:12px;
+      color:#999;
+    }
+    .tips{
+      font-size:12px;
+      color:#999;
+      margin-left: 12px;
+    }
+    .itemTypes{
+      display: flex;
+      align-items: center;
+      >li{
+        border:1px solid #E5E0DA;
+        margin-right: 10px;
+        width: 98px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:10px;
+        color:#8D857A;
+        text-align: center;
+        cursor: pointer;
+        svg{
+          margin-right:8px;
+        }
+        &.active{
+          border-color:#FF8000;
+          color:#FF8000;
+        }
+      }
+    }
+    .addCarType{
+      color:#FF8000;
+      cursor: pointer;
+    }
+    .w200{
+      .ivu-input-wrapper{
+        width:200px;
+      }
+    }
+    .self_form_item{
+      margin-bottom: 30px !important;
+      .ivu-form-item-error-tip{
+        padding-top:0px;
+      }
+    }
+    .self_formItemBox{
+      display: flex;
+
+      .ivu-input-wrapper{
+        width:212px;
+      }
+      .ivu-select{
+        width:212px;
+      }
+      .delBtn{
+        color:#FF8000;
+        margin-left:20px;
+        cursor: pointer;
+      }
+
+      
+      .self_formItem{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        >li{
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: 20px;
+          margin-bottom: 10px;
+
+          >.label{
+            margin-right:40px;
+            &.redLabel:before{
+              content: '*';
+              display: inline-block;
+              margin-right: 4px;
+              line-height: 1;
+              font-family: SimSun;
+              font-size: 14px;
+              color: #F22D00;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import './../../constant.less';
+
+.maintain-add {
+  .w-form {
+    display: flex;
+    flex-wrap: wrap;
+    // .input-style {
+    //   width: 100%;
+    // }
+
+    .ivu-select {
+      width: 290px;
+      margin-right: 18px;
+    }
+
+    .ivu-radio-wrapper {
+      margin-right: 26px;
+    }
+
+    .line {
+      border-top: 1px solid #F7F4F2;
+    }
+
+    .ivu-form-item{
+      padding-right: 20px;
+      position: relative;
+      width: 25%;
+
+      &:nth-child(4n) {
+        padding-right: 0;
+      }
+
+      .ivu-select, .tag-input, .ivu-input-wrapper, .ivu-input-number{
+        width: 100%;
+      }
+
+      .cate-tip{
+        position: absolute;
+        top: -34px;
+        right: 0;
+        span, .iconfont{
+          cursor: pointer;
+          color: @primary-color;
+          position: relative;
+        }
+        .iconfont{
+          position: relative;
+          bottom: -1px;
+        }
+      }
+    }
+
+    .ivu-cascader {
+      .ivu-input-wrapper,
+      .ivu-input {
+        height: 36px;
+      }
+    }
+
+    .wid-50 {
+      width: 50%;
+      padding-right: 20px !important;
+    }
+
+    .m-input {
+      .ivu-input {
+        min-height: 36px;
+      }
+    }
+  }
+}

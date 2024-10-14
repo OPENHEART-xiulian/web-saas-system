@@ -1,0 +1,126 @@
+@import './../../constant.less';
+
+.service-add {
+  .ivu-form {
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    padding-bottom: 200px;
+  }
+
+
+  .item-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 12px;
+
+    &.search_box{
+      padding:30px;
+      padding-top:10px;
+      border-bottom: 1px solid #E5E2DF;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      .search_contentBox{
+        position: relative;
+        width: 50%;
+
+        .iconfont{
+          position: absolute;
+          font-size: 18px;
+          top:5px;
+          left: 10px;
+          z-index: 2;
+          cursor: pointer;
+        }
+
+        .ivu-input{
+          padding-left:36px;
+        }
+        .noResult{
+          text-align: center;
+          padding-top:50px;
+        }
+
+        .searchResult{
+          position: absolute;
+          left: 0;
+          width: 100%;
+          top: 50px;
+          background: #fff;
+          box-shadow: 0px 2px 1px 1px #efefef;
+          z-index: 2;
+          height: 300px;
+          overflow: auto;
+
+          li{
+            .font();
+            padding: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+
+
+    .ivu-form-item {
+      flex: 1;
+      width: 25%;
+      margin-right: 20px;
+      margin-bottom: 0;
+
+      .ivu-form-item-error-tip {
+        padding-top: 4px;
+      }
+    }
+
+    .ivu-form-item-label {
+      line-height: initial;
+      padding: 0;
+      .font(12px);
+    }
+    
+    .ivu-form-item-content {
+      margin-top: 6px;
+    }
+
+    .ivu-input-group-append {
+      width: 60px;
+      border-radius: 3px;
+      .font();
+      .b-color(#F7F4F2, #E5E2DF);
+    }
+
+    .service-type {
+      position: absolute;
+      right: 0;
+      top: -30px;
+      .font(12px);
+      
+      span {
+        vertical-align: top;
+        &:nth-child(2) {
+          color: #FF8000;
+          cursor: pointer;
+        }
+      }
+
+      i {
+        margin-right: 6px;
+      }
+    }
+  }
+
+
+
+  .half {
+    width: 50%;
+
+    .ivu-form-item {
+      margin-right: 10px;
+    }
+  }
+}

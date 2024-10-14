@@ -1,0 +1,80 @@
+
+/* size */
+@min-width: 1200px;
+@header-height: 60px;
+@footer-height: 60px;
+
+/* color */
+@theme-black: #332E29;
+@bg-color: #F7F4F2;
+@primary-color: #FF8000;
+@primary-hover-color: fade(@primary-color, 90%);
+@primary-active-color: fade(@primary-color, 105%);
+
+@box-shadow: 0 2px 4px 0 rgba(51, 46, 41, 0.05);
+
+//通用标题样式
+.commonTitle{
+  .font();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+
+// 二倍图
+.bg-img(@image1, @image2) {
+  background: url(@image1);
+  background: -webkit-image-set(url(@image1) 1x, url(@image2) 2x);
+}
+
+// 字体
+.font(@size: 14px, @color: @theme-black) {
+  font-size: @size;
+  color: @color;
+}
+
+// 宽高
+.size(@width, @height: @width) {
+  width: @width;
+  height: @height;
+}
+
+// 宽度
+.width(@width, @min-width: @width) {
+  width: @width;
+  min-width: @min-width;
+}
+
+// 高度
+.height(@height, @line-height: @height) {
+  height: @height;
+  line-height: @line-height;
+}
+
+// 定位
+.pos(@position, @left, @top) {
+  position: @position;
+  left: @left;
+  top: @top;
+}
+
+// 边框
+.border(@color, @type: solid) {
+  border: 1px @type @color;
+}
+
+// 背景边框颜色
+.b-color (@background, @border: @background) {
+  background-color: @background;
+  border-color: @border;
+}
+
+// 单行文本溢出
+.ellipsis () {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

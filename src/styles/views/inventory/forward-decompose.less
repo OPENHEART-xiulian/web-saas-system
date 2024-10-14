@@ -1,0 +1,77 @@
+@import './../../constant.less';
+
+.forward-decompose {
+  padding-bottom: 100px;
+  
+  .detail-top {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    .font();
+
+    p {
+      line-height: 28px;
+
+      span {
+        display: inline-block;
+        width: 100px;
+        color: #807D7C;
+      }
+    }
+  }
+
+  .text {
+    padding-left: 20px;
+    .height(50px);
+    .font();
+  }
+
+  .decompose-table {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    .font();
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 15px 20px;
+      border-bottom: 1px solid #E5E2DF;
+
+      &:nth-child(7),
+      &:nth-child(8) {
+        width: 12%;
+      }
+
+      &:nth-child(10) {
+        width: 8%;
+      }
+    }
+
+    th {
+      padding: 10px 8px;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px 8px;
+      .font(14px, #807D7C);
+    }
+
+    .ivu-select-dropdown {
+      z-index: 1999;
+    }
+
+    .err-tip {
+      vertical-align: sub;
+      .font(12px, #F22D00);
+    }
+  }
+}

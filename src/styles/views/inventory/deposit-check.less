@@ -1,0 +1,58 @@
+@import './../../constant.less';
+
+.deposit-check{
+  .header{
+    line-height: 50px;
+    border-radius: 3px;
+    background-color: rgb(252, 251, 250);
+    padding-left: 20px;
+    .font();
+
+    span {
+      margin-right: 14px;
+      padding-right: 18px;
+      border-right: 1px solid #E5E2DF;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  .w-table{
+    .ivu-table th{
+      height: 50px;
+    }
+    .remark{
+      position: relative;
+      padding: 13px 20px;
+      height: 120px;
+      background-color: rgba(252, 251, 250, 1);
+      .font();
+
+      .right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 118px;
+        min-width: 298px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 0 1px rgba(242, 45, 0, 1);
+        border: 5px solid rgba(255, 242, 240, 1);
+        padding: 24px;
+
+        p{
+          text-align: right;
+          .height(22px);
+          .font();
+
+          span{
+            margin-left: 5px;
+            vertical-align: middle;
+            .font(18px, rgba(242, 45, 0, 1));
+          }
+        }
+      }
+    }
+  }
+}

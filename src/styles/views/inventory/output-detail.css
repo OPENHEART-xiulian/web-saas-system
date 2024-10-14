@@ -1,0 +1,106 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.output-detail .header {
+  line-height: 50px;
+  border-radius: 3px;
+  background-color: #fcfbfa;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #332E29;
+}
+.output-detail .header span {
+  margin-right: 14px;
+  padding-right: 18px;
+  border-right: 1px solid #E5E2DF;
+}
+.output-detail .header span:last-child {
+  border-right: 0;
+}
+.output-detail .output-detail-content {
+  background: white;
+  padding: 0 20px 20px;
+}
+.output-detail .output-detail-content > table {
+  table-layout: fixed;
+  width: 100%;
+  border-bottom: 1px solid #F7F4F2;
+}
+.output-detail .output-detail-content > table td {
+  color: #332E29;
+  font-size: 14px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+.output-detail .output-detail-content > table .plateno {
+  width: 120px;
+}
+.output-detail .output-detail-content > table .plateno span {
+  display: inline-block;
+  padding: 4px 6px;
+  background: #336EE3;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #336EE3;
+  border-radius: 2px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+}
+.output-detail .output-detail-content > table .plateno span.none {
+  background: #E5E2DF;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #E5E2DF;
+  color: #332E29;
+}
+.output-detail .output-detail-content > table .img {
+  width: 50px;
+}
+.output-detail .output-detail-content > table .img img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
+  transform: translateY(3px);
+}
+.output-detail .output-detail-content > table .name {
+  width: 200px;
+}
+.output-detail .output-detail-content > table .mobile {
+  width: 200px;
+  text-align: right;
+}
+.output-detail .remark {
+  margin-top: 20px;
+  position: relative;
+  text-align: right;
+}
+.output-detail .remark .right {
+  text-align: left;
+  display: inline-block;
+  margin-right: 0;
+  width: 298px;
+  padding: 30px 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #f22d00;
+  border: 5px solid #fff2f0;
+  padding: 24px;
+}
+.output-detail .remark .right p {
+  text-align: right;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #332E29;
+}
+.output-detail .remark .right p span {
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #f22d00;
+}

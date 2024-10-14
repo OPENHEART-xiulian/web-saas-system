@@ -1,0 +1,134 @@
+@import './../../constant.less';
+.refund-add {
+  padding-bottom: 80px;
+
+  &.warehouseRefund{
+    .refundFormBox{
+      display: flex;
+      .refund-form {
+        width: 50%;
+      }
+
+    }
+  }
+  .box-shadow {
+    position: relative;
+    box-shadow: @box-shadow;
+    background: white;
+    border-radius: 3px;
+  }
+
+  .refund-form {
+    padding: 20px;
+  }
+
+  .form-item span {
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    min-width: 100px;
+  }
+  
+  .item-value {
+    color: @theme-black;
+  }
+  
+  .form-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .ivu-form-item {
+      width: 23.5%;
+      margin-right: 2%;
+    }
+    .ivu-form-item-label {
+      color: @theme-black;
+    }
+    .ivu-form-item:nth-child(4) {
+      margin-right: 0;
+    }
+    .ivu-date-picker {
+      width: 100%;
+    }
+    .add-btn {
+      position: absolute;
+      right: 0;
+      top: -32px;
+      color: #FF8800;
+      cursor: pointer;
+    }
+  }
+  .title{
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: #fcfbfa;
+    text-align: left;
+    font-weight: bold;
+    .height(50px);
+    .font();
+  }
+
+  .part-list {
+    padding: 0 20px 20px;
+  }
+
+  .bottom-submit {
+    line-height: normal;
+    p {
+      color: @theme-black;
+    }
+    .price span {
+      font-size: 20px;
+      color: #f22d00;
+    }
+    .slot {
+      padding: 20px 0;
+    }
+    .slot-left {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+  }
+
+  .add-supplier {
+    .ivu-btn {
+      position: absolute;
+      right: 0;
+      top: -28px;
+    }
+  }
+
+  .remark{
+    position: relative;
+    text-align: right;
+    padding: 20px;
+    .right{
+      text-align: left;
+      display: inline-block;
+      margin-right: 0;
+      width: 298px;
+      padding: 30px 0;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0 0 0 1px rgba(242, 45, 0, 1);
+      border: 5px solid rgba(255, 242, 240, 1);
+      padding: 24px;
+
+      p{
+        text-align: right;
+        .height(22px);
+        .font();
+
+        span{
+          margin-left: 5px;
+          vertical-align: middle;
+          .font(18px, rgba(242, 45, 0, 1));
+        }
+      }
+      .small{
+        font-size: 12px;
+        color:#666;
+      }
+    }
+  }
+}

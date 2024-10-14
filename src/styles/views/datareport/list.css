@@ -1,0 +1,25 @@
+/* size */
+/* color */
+.commonTitle {
+  font-size: 14px;
+  color: #332E29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+  background: #fcfbfa;
+}
+.datareport-list .active .ivu-input {
+  border-color: #FF8000;
+}
+.datareport-list .search-item {
+  width: 100%;
+  padding: 20px 20px 0;
+  background: #fff;
+}
+.datareport-list .search-item .ivu-date-picker {
+  display: inline-block;
+  margin-left: 18px;
+  width: 200px;
+}

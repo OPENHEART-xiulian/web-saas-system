@@ -1,0 +1,51 @@
+@import './../../constant.less';
+
+.forward-detail {
+  padding-bottom: 80px;
+  
+  .detail-top {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+    .font();
+
+    p {
+      line-height: 24px;
+
+      span {
+        display: inline-block;
+        width: 100px;
+        color: #807D7C;
+      }
+    }
+  }
+
+  .text {
+    padding-left: 20px;
+    .height(50px);
+    .font();
+  }
+
+  .bottom-submit {
+    .bottom-detail {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    p {
+      line-height: 24px;
+      .font();
+
+      &:last-child {
+        .font(12px, #807D7C);
+      }
+    }
+
+    .price {
+      font-weight: bold;
+      .font(16px, #F22D00);
+    }
+  }
+}

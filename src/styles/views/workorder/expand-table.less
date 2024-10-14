@@ -1,0 +1,42 @@
+@import '../../constant.less';
+
+.expand-table {
+  margin: 0 20px;
+
+  table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    .border(#F7F4F2);
+    border-bottom: 0;
+  }
+
+  th,
+  td {
+    padding: 15px 20px;
+    .border(#F7F4F2);
+  }
+
+  th {
+    background: #FCFBFA;
+    // border-top: 0;
+    color: @theme-black;
+  }
+
+  td {
+    color: #807D7C;
+  }
+
+  // tr:last-child {
+  //   td {
+  //     // border-bottom: 0;
+  //   }
+  // }
+
+  .no-data {
+    padding: 20px 0;
+    text-align: center;
+    .border(#F7F4F2);
+    border-top: 0;
+  }
+}

@@ -1,0 +1,81 @@
+@import './../../constant.less';
+
+.car-detail {
+  .detail-top {
+    position: relative;
+    padding: 0 20px;
+    background: #fff;
+    box-shadow: @box-shadow;
+  }
+
+  .show-top {
+    padding: 20px 0;
+    
+    .font();
+
+    img {
+      .size(24px);
+      vertical-align: middle;
+    }
+  }
+
+  .plate {
+    display: inline-block;
+    margin-right: 26px;
+    padding: 4px 6px;
+    background: #336EE3;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #336EE3;
+    border-radius: 2px;
+    vertical-align: middle;
+    .font(14px, #fff);
+    &.none {
+      background: #E5E2DF;
+      box-shadow: 0 0 0 1px #fff, 0 0 0 2px #E5E2DF;
+      color: @theme-black;
+    }
+  }
+
+  .show-btn {
+    float: right;
+    margin-top: -5px;
+    padding: 9px 20px;
+    background: #F7F4F2;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .detail-info {
+    padding: 20px 0 10px;
+    border-top: 1px solid #E5E2DF;
+    .font(14px, #807D7C);
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: inline-block;
+      width: 24.5%;
+    }
+
+    img {
+      width: 45%;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .record-table {
+    margin-top: 20px;
+    box-shadow: @box-shadow;
+
+    .title {
+      padding: 12px 20px;
+      background: #FCFBFA;
+      .font();
+    }
+  }
+}

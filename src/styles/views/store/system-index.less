@@ -1,0 +1,35 @@
+.system-index {
+  .tab-list {
+    display: flex;
+    background: white;
+    line-height: 50px;
+    margin-bottom: 10px;
+    &-item {
+      cursor: pointer;
+      padding: 0 20px;
+      font-size: 14px;
+      color: #332E29;
+      &.active {
+        position: relative;
+        color: #ff8000;
+      }
+
+      &.active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background: #ff8000;
+      }
+    }
+    
+  }
+
+  >.content {
+    padding: 20px;
+    background: white;
+    margin-bottom: 20px;
+  }
+}

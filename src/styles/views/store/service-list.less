@@ -1,0 +1,119 @@
+
+@import './../../constant.less';
+.service-list{
+  margin-top:20px;
+  .contentBody{
+    background: #fff;
+    padding: 0 20px 20px 0;
+    overflow: hidden;
+
+    >.left{
+      width: 200px;
+      border: 1px solid #F7F4F2;
+      margin: 20px;
+      float: left;
+      >.title{
+        height:50px;
+        line-height: 50px;
+        padding-left: 20px;
+        background:rgba(252,251,250,1);
+        font-size:14px;
+        color:@theme-black;
+      }
+
+      .ivu-tree-children{
+        color:#807D7C;
+        font-size:14px;
+        border-top: 1px solid #F7F4F2;
+      }
+      .ivu-tree ul li{
+        line-height: 50px;
+        margin:0;
+      }
+      .ivu-tree-arrow{
+        padding-left:20px;
+        padding-right: 6px;
+      }
+      .ivu-tree-title{
+        height: 50px;
+        line-height: 50px;
+      }
+      .ivu-tree-title-selected, .ivu-tree-title-selected:hover{
+        background-color: #fff;
+        color:@primary-color;
+      }
+      .ivu-tree-title:hover{
+        background-color: #fff;
+      }
+
+
+
+    }
+
+    >.right{
+      float: right;
+      width: calc(100% - 260px);
+      .searchList{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        .search_btn{
+          cursor: pointer;
+        }
+        .ivu-btn{
+          height: 40px;
+          margin-left: 10px;
+        }
+
+        .searchInput{
+          .ivu-input-group-append{
+            background: @primary-color;
+            color:#fff;
+          }
+        }
+      }
+      .m-input .ivu-input-wrapper .ivu-input{
+        height: 40px;
+      }
+
+    }
+  }
+
+  .search-form .form-item .form-number{
+    width: 480px;
+  }
+
+  .relationStore{
+    padding:30px 0 20px 0;
+    text-align: center;
+
+    img{
+      width: 100px;
+      margin-bottom: 14px;
+    }
+
+    .font1{
+      color:@theme-black;
+      font-size:14px;
+      line-height: 1.4;
+    }
+
+    .noSetting{
+      color:#BFBDBA;
+      font-size:14px;
+      cursor: pointer;
+    }
+  }
+  
+
+  .ivu-btn-text{
+    &.downloaded{
+      color:#ccc;
+      cursor: initial;
+    }
+  }
+  
+
+
+  
+}

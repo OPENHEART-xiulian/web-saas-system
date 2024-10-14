@@ -1,0 +1,46 @@
+@import './../constant.less';
+
+.query-form{
+  padding: 20px 20px 0;
+  background: #fff;
+  box-shadow: @box-shadow;
+
+  .ivu-form .ivu-form-item-label {
+    min-height: 24px;
+  }
+
+  .form-box{
+    display: flex;
+    flex-wrap: wrap;
+    // border-bottom: 1px solid #dcdee2;
+  }
+
+  .form-item{
+    padding-right: 20px;
+    width: 25%;
+    &:nth-child(4n) {
+      padding-right: 0;
+    }
+  }
+
+  .search-btn {
+    border-top: 1px solid #f7f4f2;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .ivu-btn-default {
+    margin-right: 8px;
+  }
+
+  .date-con {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ivu-date-picker {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

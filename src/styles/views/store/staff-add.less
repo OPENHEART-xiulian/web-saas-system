@@ -1,0 +1,89 @@
+@import './../../constant.less';
+
+.staff-add {
+  padding-bottom: 100px;
+  
+  .w-form {
+    .authority-check {
+      background: #FCFBFA;
+    }
+
+    .ivu-checkbox-wrapper {
+      margin-right: 0;
+      padding: 0 20px;
+      .height(54px);
+    }
+
+    .input-style {
+      width: 300px;
+    }
+
+    .vaildate {
+      margin-left: 8px;
+      vertical-align: middle;
+      .height(36px, 1);
+
+      .time {
+        line-height: 36px;
+      }
+
+      .ivu-btn {
+        line-height: 1;
+        border-color: #E5E2DF;
+
+        &:hover {
+          border-color: #f93;
+        }
+      }
+    }
+
+    .reset-btn {
+      margin-left: 8px;
+    }
+
+    .check-all {
+      display: block;
+      background: #fff;
+    }
+
+    .role-tip {
+      display: inline-block;
+      vertical-align: middle;
+
+      span {
+        .font();
+        margin-left: 10px;
+        color: @primary-color;
+        cursor: pointer;
+      }
+
+      i {
+        margin-right: 4px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .primary-text {
+    .font();
+    color: @primary-color;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .primary-content {
+    img {
+      display: block;
+      width: 100%;
+    }
+    .text {
+      display: block;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+
+  .validate-container {
+    display: flex;
+    width: 300px;
+  }
+}

@@ -1,0 +1,40 @@
+@import './../../constant.less';
+
+.notice-list {
+  background: #fff;
+
+  .left-menu {
+    padding: 20px 0;
+    li {
+      .height(36px);
+      .font();
+      padding-left: 20px; 
+      cursor: pointer;
+      border-left: 3px solid #fff;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+
+    .active {
+      background: #f7ebe4;
+      border-left-color: @primary-color;
+      color: @primary-color;
+    }
+  }
+
+  .notice-name {
+    padding: 0;
+
+    .ivu-table-cell {
+      height: 100%;
+
+      >div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

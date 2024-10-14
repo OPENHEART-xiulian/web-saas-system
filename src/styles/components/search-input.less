@@ -1,0 +1,27 @@
+@import './../constant.less';
+
+.search-input{
+  position: relative;
+  .search-list{
+    width: 470px;
+    z-index: 100;
+    max-height: 300px;
+    overflow: auto;
+    background: white;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    .pos(absolute, 0, 102%);
+    
+    .title{
+      background: #fafafa;
+    }
+    li{
+      padding-left: 30px;
+      line-height: 40px;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover{
+        background: #fcfcfc;
+      }
+    }
+  }
+}

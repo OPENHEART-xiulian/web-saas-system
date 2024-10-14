@@ -1,0 +1,43 @@
+@import '../constant.less';
+
+.tag-input{
+  padding-left: 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  .border(#ddd);
+
+  .m-input{
+    display: inline-block;
+    vertical-align: middle;
+    flex-grow: 1;
+    border: none;
+    .ivu-input-wrapper{
+      .ivu-input{
+        box-shadow: none!important;
+        outline: none!important;
+        border: none!important;
+        min-height: 30px!important;
+      }
+    }
+  }
+
+  .tag-item{
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px 10px 4px 0;
+    background: #ddd;
+    padding: 0px 5px;
+    border-radius: 3px;
+    color: @theme-black;
+    transition: 0.1s all linear;
+    .height(24px);
+    
+    &:hover{
+      transform: scale(1.05);
+    }
+    .iconfont{
+      .font(10px, #888);
+    }
+  }
+}
